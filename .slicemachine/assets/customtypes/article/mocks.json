@@ -1,0 +1,27 @@
+{
+  "id": "e8a6267e-8cf1-433f-84fa-c6208ad5ec26",
+  "uid": "id-labore-nihil",
+  "type": "article",
+  "data": {
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+    },
+    "header": "deliver 24/365 initiatives",
+    "headline": "enhance magnetic action-items",
+    "author": "maximize virtual web-readiness",
+    "date": "2017-02-15",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Incididunt sint est ea velit aliquip. Enim elit nisi culpa tempor et irure consectetur officia dolor anim velit ex.",
+        "spans": []
+      }
+    ]
+  }
+}
