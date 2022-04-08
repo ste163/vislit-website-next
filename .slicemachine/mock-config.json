@@ -1,6 +1,13 @@
 {
   "_cts": {
     "author": {},
-    "article": {}
+    "article": {
+      "content": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      }
+    }
   }
 }
