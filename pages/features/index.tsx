@@ -5,7 +5,7 @@ const Features = () => (
     <Head>
       <title>Features | Vislit </title>
     </Head>
-    <h1>Features</h1>{" "}
+    <h1>Features</h1>
   </>
 );
 

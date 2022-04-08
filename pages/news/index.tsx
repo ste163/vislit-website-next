@@ -1,3 +1,12 @@
-const News = () => <h1>News</h1>
+import Head from "next/head";
 
-export default News
+const News = () => (
+  <>
+    <Head>
+      <title>News | Vislit </title>
+    </Head>
+    <h1>News</h1>
+  </>
+);
+
+export default News;

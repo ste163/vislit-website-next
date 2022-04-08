@@ -1,3 +1,12 @@
-const Download = () => <h1>Download</h1>
+import Head from "next/head";
 
-export default Download
+const Download = () => (
+  <>
+    <Head>
+      <title>Download | Vislit </title>
+    </Head>
+    <h1>Download</h1>
+  </>
+);
+
+export default Download;
