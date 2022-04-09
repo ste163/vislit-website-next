@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Article, getArticles } from "../api";
 
 export const getStaticProps = () => {
@@ -11,7 +12,6 @@ export const getStaticProps = () => {
 };
 
 const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
-  console.log(articles);
   return (
     <>
       <Head>
@@ -21,7 +21,9 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
       {articles.map(({ id, title, headline, image, contentHtml }) => (
         <div key={id}>
           <Image src={image} height={400} width={400} alt={"test"} />
-          <h2>{title}</h2>
+          <Link href={`/news/${id}`}>
+            <a>{title}</a>
+          </Link>
           <p>{headline}</p>
           <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </div>

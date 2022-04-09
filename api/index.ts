@@ -6,7 +6,6 @@ import html from "remark-html";
 
 export interface Article {
   id: string;
-  slug: string;
   title: string;
   headline: string;
   image: string;
@@ -51,7 +50,6 @@ export const getArticles = (count?: number): Article[] => {
     const processedContent = remark().use(html).processSync(content).toString();
     return {
       id,
-      slug,
       title,
       headline,
       image,
@@ -86,7 +84,6 @@ export const getArticleById = (id: string): Article => {
 
   return {
     id,
-    slug,
     title,
     headline,
     image,
