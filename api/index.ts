@@ -13,7 +13,7 @@ export interface Article {
   contentHtml: string;
 }
 
-const articlesDirectory = join(process.cwd(), "articles");
+const articlesDirectory = join(process.cwd(), "_articles");
 
 /**
  * Get all ids for fetching per article by id route
