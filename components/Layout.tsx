@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   // or show/hide based on media queries (so no js)
 
   return (
-    <>
+    <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
       <footer>
         <p>Footer</p>
       </footer>
-    </>
+    </div>
   );
 };
 
