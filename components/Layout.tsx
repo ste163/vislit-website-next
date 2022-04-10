@@ -7,11 +7,11 @@ const Layout = ({ children }) => {
   // or show/hide based on media queries (so no js)
 
   return (
-    <div>
+    <div className="h-full flex flex-col">
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav>
+      <nav className="bg-gray">
         <Link href="/">Home</Link>
         <Link href="/features">Features</Link>
         <Link href="/news">News</Link>
@@ -19,9 +19,9 @@ const Layout = ({ children }) => {
         <Link href="/download">Download</Link>
       </nav>
 
-      <main>{children}</main>
+      <main className="grow mx-10">{children}</main>
 
-      <footer>
+      <footer className="bg-gray">
         <p>Footer</p>
       </footer>
     </div>
