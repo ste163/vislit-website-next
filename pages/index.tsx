@@ -17,7 +17,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
       <Head>
         <title>Vislit</title>
       </Head>
-      <h1>Home</h1>
+      <h1>Vislit</h1>
       {articles.map(({ id, title, headline, image, contentHtml }) => (
         <div key={id}>
           <Image src={image} height={400} width={400} alt={"test"} />

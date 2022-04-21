@@ -27,10 +27,40 @@ const Layout = ({ children }) => {
         </div>
       </nav>
 
-      <main className="grow mx-10">{children}</main>
+      <main className="grow mx-12 mt-12">{children}</main>
 
-      <footer className="bg-gray">
-        <p>Footer</p>
+      <footer className="flex justify-center bg-gray mt-24 py-6">
+        {/* Need to change width based on screen size */}
+        <div className="max-w-sm">
+          <p>
+            <span className="font-bold">Vislit</span> (a combination of visual +
+            literature) is a free and open source desktop writing application
+            released under the AGPL-3 license. The entire source code for this
+            website and the application is available on{" "}
+            <a className="underline" href="https://github.com/ste163/vislit">
+              Github
+            </a>
+            .
+          </p>
+        </div>
+
+        <ul className="ml-16 font-bold">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/features">Features</Link>
+          </li>
+          <li>
+            <Link href="/news">News</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/download">Download</Link>
+          </li>
+        </ul>
       </footer>
     </div>
   );
