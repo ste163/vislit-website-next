@@ -29,9 +29,8 @@ const Layout = ({ children }) => {
 
       <main className="grow mx-12 mt-12">{children}</main>
 
-      <footer className="flex justify-center bg-gray mt-24 py-6">
-        {/* Need to change width based on screen size */}
-        <div className="max-w-sm">
+      <footer className="flex flex-col justify-center md:flex-row bg-gray mt-24 py-6">
+        <div className="max-w-sm mx-8">
           <p>
             <span className="font-bold">Vislit</span> (a combination of visual +
             literature) is a free and open source desktop writing application
@@ -44,7 +43,7 @@ const Layout = ({ children }) => {
           </p>
         </div>
 
-        <ul className="ml-16 font-bold">
+        <ul className="font-bold mx-8 md:mt-0 mt-4">
           <li>
             <Link href="/">Home</Link>
           </li>
