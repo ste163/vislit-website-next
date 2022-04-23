@@ -19,24 +19,36 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
         <title>Vislit</title>
       </Head>
 
-      <section>
-        <LogoTitle />
-        <h2 className="font-black text-4xl mt-8">the app for writers</h2>
-        <p className="text-lg my-4 max-w-lg">
-          Write and manage short stories, novels, poems, or any writing project.
-          Keep your notes, goals, and documents cleanly organized and
-          accessible.
-        </p>
+      <section className="flex">
+        <div className="mr-8">
+          <LogoTitle />
+          <h2 className="font-black text-4xl mt-12 mb-6">
+            the app for writers
+          </h2>
+          <p className="text-lg max-w-lg">
+            Write and manage short stories, novels, poems, or any writing
+            project. Keep your notes, goals, and documents cleanly organized and
+            accessible.
+          </p>
+        </div>
+
+        <Image
+          src={"/images/test-image.png"}
+          height={400}
+          width={600}
+          alt={"test"}
+        />
       </section>
 
-      {articles.map(({ id, title, headline, image, contentHtml }) => (
+      {articles.map(({ id, title, headline, image }) => (
         <div key={id}>
-          <Image src={image} height={400} width={400} alt={"test"} />
           <Link href={`/news/${id}`}>
-            <a>{title}</a>
+            <div>
+              <Image src={image} height={100} width={100} alt={"test"} />
+              <a>{title}</a>
+              <p>{headline}</p>
+            </div>
           </Link>
-          <p>{headline}</p>
-          <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </div>
       ))}
     </>

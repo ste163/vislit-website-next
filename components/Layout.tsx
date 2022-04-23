@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="sticky flex justify-center items-center text-lg bg-gray font-black tracking-wide min-h-[40px]">
+      <nav className="flex justify-center items-center text-lg bg-gray font-black tracking-wide min-h-[40px]">
         <div className="flex mr-12">
           <Link href="/">
             <div className="cursor-pointer">
