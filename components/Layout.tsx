@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Logo from "./Logo";
 
 const Layout = ({ children }) => {
   // will need to dynamically change between mobile and desktop navbar
@@ -11,9 +12,14 @@ const Layout = ({ children }) => {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="flex justify-center items-center text-lg bg-gray font-black tracking-wide min-h-[40px]">
-        <div className="mr-12">
-          <Link href="/">Logo</Link>
+      <nav className="sticky flex justify-center items-center text-lg bg-gray font-black tracking-wide min-h-[40px]">
+        <div className="flex mr-12">
+          <Link href="/">
+            <div className="cursor-pointer">
+              <Logo />
+            </div>
+          </Link>
+
           <span className="mx-5">
             <Link href="/features">FEATURES</Link>
           </span>
@@ -27,7 +33,7 @@ const Layout = ({ children }) => {
         </div>
       </nav>
 
-      <main className="grow mx-12 mt-12">{children}</main>
+      <main className="grow mx-16 mt-16">{children}</main>
 
       <footer className="flex flex-col justify-center md:flex-row bg-gray mt-24 py-6">
         <div className="max-w-sm mx-8">
