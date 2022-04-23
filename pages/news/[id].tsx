@@ -25,15 +25,23 @@ const NewsArticle: React.FC<{ article: Article }> = ({
       <Head>
         <title>{title} | Vislit</title>
       </Head>
-      <figure className="flex flex-col w-fit">
-        <Image src={image} width={500} height={500} alt={altText} />
-        <figcaption className="text-right italic">{altText}</figcaption>
-      </figure>
 
-      <h1>{title}</h1>
-      <p>{date}</p>
-      <h2>{headline}</h2>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <div className="flex flex-col place-items-center">
+        <figure className="flex flex-col w-fit">
+          <Image src={image} width={500} height={500} alt={altText} />
+          <figcaption className="text-right italic">{altText}</figcaption>
+        </figure>
+
+        <div className="max-w-4xl">
+          <h1 className="mt-6 mb-2">{title}</h1>
+          <p className="italic">{date}</p>
+          <h2 className="mt-4">{headline}</h2>
+          <div
+            className="leading-relaxed article-spacing"
+            dangerouslySetInnerHTML={{ __html: contentHtml }}
+          />
+        </div>
+      </div>
     </>
   );
 };

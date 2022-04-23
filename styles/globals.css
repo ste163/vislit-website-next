@@ -23,3 +23,7 @@
 .card {
   @apply bg-gray rounded-md;
 }
+
+.article-spacing > p {
+  @apply my-6;
+}
