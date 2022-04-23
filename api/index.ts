@@ -6,9 +6,11 @@ import html from "remark-html";
 
 export interface Article {
   id: string;
+  slug: string;
   title: string;
   headline: string;
   image: string;
+  altText: string;
   date: string;
   contentHtml: string;
 }
@@ -43,16 +45,18 @@ export const getArticles = (count?: number): Article[] => {
     const fileData = readFileSync(fullPath, "utf8");
     // parse metadata
     const {
-      data: { slug, title, headline, image, date },
+      data: { slug, title, headline, image, altText, date },
       content,
     } = matter(fileData);
     // convert markdown to html
     const processedContent = remark().use(html).processSync(content).toString();
     return {
       id,
+      slug,
       title,
       headline,
       image,
+      altText,
       date,
       contentHtml: processedContent,
     };
@@ -77,16 +81,18 @@ export const getArticleById = (id: string): Article => {
   const fullPath = join(articlesDirectory, `${id}.md`);
   const fileData = readFileSync(fullPath, "utf8");
   const {
-    data: { slug, title, headline, image, date },
+    data: { slug, title, headline, image, altText, date },
     content,
   } = matter(fileData);
   const processedContent = remark().use(html).processSync(content).toString();
 
   return {
     id,
+    slug,
     title,
     headline,
     image,
+    altText,
     date,
     contentHtml: processedContent,
   };

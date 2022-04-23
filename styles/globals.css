@@ -6,11 +6,20 @@
   height: 100vh;
 }
 
-h1 {
-  font-weight: 900;
-  font-size: 2.5rem;
+@layer base {
+  h1 {
+    @apply font-black text-5xl;
+  }
+
+  h2 {
+    @apply font-black text-4xl;
+  }
+
+  h3 {
+    @apply font-bold text-xl;
+  }
 }
 
 .card {
-  @apply bg-gray rounded-sm;
+  @apply bg-gray rounded-md;
 }
