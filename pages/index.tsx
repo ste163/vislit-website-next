@@ -52,8 +52,8 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
         <title>Vislit</title>
       </Head>
 
-      <section className="flex flex-col self-center w-4/5 lg:flex-row">
-        <div className="mr-8 w-1/2 self-center">
+      <section className="flex flex-col self-center w-11/12 lg:flex-row">
+        <div className="mr-12  w-1/2 self-center">
           <LogoTitle />
           <h2 className="mt-12 mb-6">the app for writers</h2>
           <p className="text-lg max-w-lg mb-6">

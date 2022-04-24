@@ -27,3 +27,11 @@
 .article-spacing > p {
   @apply my-6;
 }
+
+.nav-link {
+  @apply px-2;
+}
+
+.active-nav-link {
+  @apply bg-white rounded-sm text-primary;
+}
