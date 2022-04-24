@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Article, getArticles } from "../api";
+import ImageTextOverlay from "../components/ImageTextOverlay";
 import LogoTitle from "../components/LogoTitle";
 
 export const getStaticProps = () => {
@@ -12,6 +13,38 @@ export const getStaticProps = () => {
   };
 };
 
+const cards = [
+  {
+    imageSrc: "/images/test-image.png",
+    altText: "test",
+    heading: `Distraction-free writing`,
+    text: `For any sized document with everything you expect from Microsoft
+      Word or Google Docs, but without the bloated extras like "Mail
+      Merge"`,
+  },
+  {
+    imageSrc: "/images/test-image.png",
+    altText: "test",
+    heading: `Notes anywhere`,
+    text: `Anywhere in the application, you can access your notes.
+      No swapping between programs to find character references`,
+  },
+  {
+    imageSrc: "/images/test-image.png",
+    altText: "test",
+    heading: `Project management`,
+    text: `View summary and list information on all of your projects,
+      organized by currently in progress, completed, and archived`,
+  },
+  {
+    imageSrc: "/images/test-image.png",
+    altText: "test",
+    heading: `Goals, Progress, Visualizations`,
+    text: `The hardest part about writing is keeping at it.
+      Easily set and modify goals and visualize your progress"`,
+  },
+];
+
 const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
   return (
     <div className="flex flex-col">
@@ -19,7 +52,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
         <title>Vislit</title>
       </Head>
 
-      <section className="flex flex-col align-center lg:flex-row">
+      <section className="flex flex-col self-center w-4/5 lg:flex-row">
         <div className="mr-8 w-1/2 self-center">
           <LogoTitle />
           <h2 className="mt-12 mb-6">the app for writers</h2>
@@ -55,13 +88,15 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
           </div>
         </div>
 
-        <Image
-          className="w-1/2"
-          src={"/images/test-image.png"}
-          height={400}
-          width={600}
-          alt={"test"}
-        />
+        <div className="w-1/2 block">
+          <Image
+            src={"/images/test-image.png"}
+            layout="responsive"
+            height={300}
+            width={400}
+            alt={"test"}
+          />
+        </div>
       </section>
 
       <section className="mt-16 self-center">
@@ -116,6 +151,27 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="self-center w-5/6 max-w-screen-xl">
+        <h2 className="mt-16 mb-6">The new way to write</h2>
+        <p className="text-lg max-w-lg mb-6">
+          With a clean, simple interface designed to keep you writing and only
+          the features needed for productivity.
+        </p>
+
+        <div className="lg:grid gap-10 grid-cols-2 md:flex flex-col">
+          {cards.map(({ imageSrc, altText, heading, text }, index) => (
+            <div key={index} className="md:my-0 sm:my-10">
+              <ImageTextOverlay
+                imageSrc={imageSrc}
+                altText={altText}
+                heading={heading}
+                text={text}
+              />
+            </div>
+          ))}
         </div>
       </section>
     </div>

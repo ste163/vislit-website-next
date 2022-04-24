@@ -4,7 +4,7 @@ import { Article, getAllArticleIds, getArticleById } from "../../api";
 
 export const getStaticPaths = () => {
   return {
-    paths: getAllArticleIds(),
+    paths: getAllArticleIds(), // convert to getAllArticleSlugs
     fallback: false,
   };
 };
@@ -12,7 +12,7 @@ export const getStaticPaths = () => {
 export const getStaticProps = ({ params: { id } }) => {
   return {
     props: {
-      article: getArticleById(id),
+      article: getArticleById(id), // convert to getArticleBySlug
     },
   };
 };
