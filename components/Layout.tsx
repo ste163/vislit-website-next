@@ -1,15 +1,59 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import NavigationBar from "./NavigationBar";
 
+function debounce(fn: Function, ms: number) {
+  let timer: any;
+  function setDebounce() {
+    timer = null;
+    fn.apply(this, arguments);
+  }
+  return () => {
+    clearTimeout(timer);
+    timer = setTimeout(setDebounce, ms);
+  };
+}
+
 const Layout = ({ children }) => {
+  const [windowWidth, setWindowWidth] = useState<number | null>(null);
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  // track window width in state
+  useEffect(() => {
+    const debounceHandleResize = debounce(() => {
+      setWindowWidth(window.innerWidth);
+    }, 20);
+    window.addEventListener("resize", debounceHandleResize);
+    return () => {
+      window.removeEventListener("resize", debounceHandleResize);
+    };
+  }, []);
+
+  // handle change from mobile to desktop + resetting state
+  useEffect(() => {
+    if (windowWidth > 768) {
+      setIsMobile(false);
+      if (isHamburgerOpen) setIsHamburgerOpen(false);
+    } else {
+      if (!isMobile) setIsMobile(true);
+    }
+  }, [windowWidth]);
+
   return (
-    <div className="h-full flex flex-col">
+    <div
+      className={`h-full flex flex-col ${isHamburgerOpen && "overflow-hidden"}`}
+    >
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavigationBar />
+      <NavigationBar
+        isMobile={isMobile}
+        isHamburgerOpen={isHamburgerOpen}
+        setIsHamburgerOpen={setIsHamburgerOpen}
+      />
 
       <main className="grow mx-16 mt-16">{children}</main>
 
