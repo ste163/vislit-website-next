@@ -33,5 +33,5 @@
 }
 
 .active-nav-link {
-  @apply bg-white rounded-sm text-primary;
+  @apply bg-white rounded-sm text-primary w-fit self-end;
 }
