@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   const { pathname } = useRouter();
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
   const [isHamburgerOpen, setIsHamburgerOpen] = useState<boolean>(false);
-  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   // track window width in state
   useEffect(() => {
@@ -38,11 +38,13 @@ const Layout = ({ children }) => {
 
   // handle change from mobile to desktop + resetting state
   useEffect(() => {
-    if (windowWidth > 768) {
-      setIsMobile(false);
-      if (isHamburgerOpen) setIsHamburgerOpen(false);
-    } else {
-      if (!isMobile) setIsMobile(true);
+    if (windowWidth) {
+      if (windowWidth > 768) {
+        setIsMobile(false);
+        if (isHamburgerOpen) setIsHamburgerOpen(false);
+      } else {
+        setIsMobile(true);
+      }
     }
   }, [windowWidth]);
 
