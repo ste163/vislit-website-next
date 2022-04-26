@@ -29,10 +29,14 @@ const NavigationBar: React.FC<{
           </Link>
 
           <button
-            className={`${isMobile ? "" : "hidden"}`}
+            className={`${isMobile ? "hamburger-container" : "hidden"}`}
             onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}
           >
-            Burger
+            <div
+              className={
+                isHamburgerOpen ? "hamburger hamburger--active" : "hamburger"
+              }
+            ></div>
           </button>
         </div>
 

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import NavigationBar from "./NavigationBar";
 
@@ -16,12 +17,16 @@ function debounce(fn: Function, ms: number) {
 }
 
 const Layout = ({ children }) => {
+  const { pathname } = useRouter();
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
   const [isHamburgerOpen, setIsHamburgerOpen] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   // track window width in state
   useEffect(() => {
+    // need to set width immediately
+    setWindowWidth(window.innerWidth);
+
     const debounceHandleResize = debounce(() => {
       setWindowWidth(window.innerWidth);
     }, 20);
@@ -40,6 +45,11 @@ const Layout = ({ children }) => {
       if (!isMobile) setIsMobile(true);
     }
   }, [windowWidth]);
+
+  // close hamburger on route change
+  useEffect(() => {
+    setIsHamburgerOpen(false);
+  }, [pathname]);
 
   return (
     <div
