@@ -1,5 +1,6 @@
 import Head from "next/head";
 import CardFeature from "../../components/CardFeature";
+import GraphicFeature from "../../components/GraphicFeature";
 
 const Features = () => (
   <>
@@ -8,7 +9,7 @@ const Features = () => (
     </Head>
 
     <div className="flex">
-      <div>Graphic</div>
+      <GraphicFeature />
       <h1>Only the essentials</h1>
     </div>
 
