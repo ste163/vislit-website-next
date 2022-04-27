@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import CardFeature from "../../components/CardFeature";
 import GraphicFeature from "../../components/GraphicFeature";
 
@@ -10,7 +11,28 @@ const Features = () => (
 
     <div className="flex">
       <GraphicFeature />
-      <h1>Only the essentials</h1>
+
+      <div className="w-1/2">
+        <h1>Only the essentials</h1>
+        <p>
+          Too many writing tools are general purpose or have so many features
+          they're overwhelming. Vislit aims to be as simple as possible, so you
+          can focus on writing, while allowing for managing projects, documents,
+          folders, and notes easily.
+        </p>
+        <p>
+          Vislit focuses on being as simple as possible. - Project management.
+          The core of Vislit is that it keeps your writing projects separated.
+          By selecting or starting a new project, you only see documents, notes,
+          goals, and progress for that project. - Minimal writing editor. For
+          the most used formatting needs and easy file backups. - Global note
+          editor. Have any of your project notes available anywhere - Goals. Set
+          word count goals for every day, week, or month. - Progress. Track
+          whether you proofread, edited, revised, along with how many words you
+          write - Visualization. See your progress in a dashboard and receive
+          suggestions on how you can improve on your goals
+        </p>
+      </div>
     </div>
 
     <CardFeature header="Projects at the core" isReverse className={"mb-12"}>
@@ -71,7 +93,23 @@ const Features = () => (
 
     <div>timeline</div>
 
-    <div>download card</div>
+    {/* Center the download card on page */}
+    <div className="bg-gray flex justify-center py-5 max-w-xl rounded-md">
+      <div className="w-1/2 flex flex-col items-center">
+        <h2 className="text-2xl font-bold text-center mb-3">
+          Ready to start writing?
+        </h2>
+        <Link href="/download">
+          <div className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer">
+            <span className="text-2xl font-bold">Download</span>
+            <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
+              v1.0
+            </div>
+            <span>Linux, Mac, Windows</span>
+          </div>
+        </Link>
+      </div>
+    </div>
   </>
 );
 

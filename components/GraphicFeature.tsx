@@ -1,7 +1,13 @@
 import React from "react";
 
 const GraphicFeature: React.FC = () => (
-  <svg width="581" height="601" viewBox="0 0 153.72292 159.01458">
+  <svg
+    width="581"
+    height="601"
+    viewBox="0 0 153.72292 159.01458"
+    style={{ maxWidth: "450px" }}
+  >
+    <title>Feature Page Graphic</title>
     <g transform="translate(-15.752234,7.9404229)">
       <rect
         id="rect193245"
