@@ -1,15 +1,15 @@
-import Image from "next/image";
 import React from "react";
-import { Article } from "../api";
+import Image from "next/image";
 import Card from "./Card";
+import { Article } from "../api";
 
 const CardNews: React.FC<{ article: Article; className?: any }> = ({
   article,
   className,
 }) => {
   return (
-    <div className={`${className} flex max-w-5xl max-h-[400px]`}>
-      <div className="relative w-1/3 max-h-[400px]`">
+    <div className={`${className} flex max-w-5xl max-h-[400px] cursor-pointer`}>
+      <div className="hidden md:block relative w-1/3 self-center">
         <Image
           src={article.image}
           height="100%"

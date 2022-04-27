@@ -5,8 +5,8 @@ const Card: React.FC<{
   children: ReactNode;
   className?: any;
 }> = ({ header, children, className }) => (
-  <section className={`${className} bg-gray rounded-md px-6 py-4`}>
-    <h2 className="mb-4">{header}</h2>
+  <section className={`${className} bg-gray rounded-md px-10 py-8`}>
+    <h2 className="text-2xl md:text-3xl mb-8">{header}</h2>
     {children}
   </section>
 );

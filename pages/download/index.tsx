@@ -7,8 +7,10 @@ const Download = () => (
       <title>Download | Vislit </title>
     </Head>
     <Card header="Download">
-      Vislit is currently in development, but will be available soon. See the
-      roadmap (anchor link) for the current trajectory.
+      <p>
+        Vislit is currently in development, but will be available soon. See the
+        roadmap (anchor link) for the current trajectory.
+      </p>
     </Card>
   </>
 );

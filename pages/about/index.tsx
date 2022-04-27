@@ -7,7 +7,7 @@ const About = () => (
       <title>About | Vislit </title>
     </Head>
     <Card header="The software">
-      <p className="mb-4">
+      <p className="mb-8">
         Vislit is free and open source software licensed under the AGPL 3
         license. This license gives you the freedom to use and modify Vislit
         anyway you see fit. It's yours forever! The only ask is that if you make
@@ -37,13 +37,11 @@ const About = () => (
         projects available, namely: Electron, Vue, Node, TypeScript, Lowdb, and
         more.
       </p>
-
-      <p className="my-4">
+      <p className="my-8">
         The base project was scaffolded uses catawa93's fantastic
         vite-electron-builder, but has since been modified to suite Vislit's
         needs.
       </p>
-
       <p>Shannon Swenton for logo design</p>
     </Card>
   </>
