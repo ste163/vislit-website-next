@@ -88,12 +88,13 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
           </div>
         </div>
 
-        <div className="w-1/2 block">
+        {/* need to set image max height to 500 */}
+        <div className="w-2/3 block rounded-md">
           <Image
-            src={"/images/test-image.png"}
+            src={"/images/home/hero.png"}
             layout="responsive"
-            height={300}
-            width={400}
+            height={500}
+            width={600}
             alt={"test"}
           />
         </div>
