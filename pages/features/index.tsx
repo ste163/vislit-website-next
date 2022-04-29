@@ -63,11 +63,7 @@ const Features = () => (
       </p>
     </CardFeature>
 
-    <CardFeature
-      header="Minimalist writing and note taking"
-      isReverse
-      className={"mb-12"}
-    >
+    <CardFeature header="Set your writing goals" isReverse className={"mb-12"}>
       <p className="mb-8">
         The best way to finish anything is by setting a goal. That's why Vislit
         allows for easy goal setting. If you set an ambitious goal of writing
@@ -88,6 +84,35 @@ const Features = () => (
         visualization dashboard will develop, giving you insight into how you
         write and the best times you write. Make changes to increase your goals
         or relax them if it's too much.
+      </p>
+    </CardFeature>
+
+    <CardFeature
+      header="Security and data privacy"
+      isReverse
+      className={"mb-12"}
+    >
+      <p>
+        Vislit is secure and private by design. The entire source code used to
+        create Vislit is freely avaible for review, scrutiny, and improvement on
+        Github (link).
+      </p>
+
+      <p>
+        Vislit saves your documents and notes as HTML files which can be
+        imported into any writing editor. Its local database is stored in JSON,
+        another standard and highly transferrable data format.
+      </p>
+
+      <p>
+        Vislit only connects to the internet when it's checking for updated
+        versions and knows nothing about your data.
+      </p>
+
+      <p>
+        If you'd like to use Vislit on multiple computers, you can store your
+        data in a Google Drive, Dropbox, or any other cloud syncing service, and
+        it all "just works!"
       </p>
     </CardFeature>
 
