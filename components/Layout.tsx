@@ -67,7 +67,7 @@ const Layout = ({ children }) => {
         setIsHamburgerOpen={setIsHamburgerOpen}
       />
 
-      <main className="grow mx-16 mt-24">{children}</main>
+      <main className="grow mx-6 md:mx-16 mt-24">{children}</main>
 
       <footer className="flex flex-col justify-center md:flex-row bg-gray mt-24 py-6">
         <div className="max-w-sm mx-8">

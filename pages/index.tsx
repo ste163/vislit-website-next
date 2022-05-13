@@ -53,7 +53,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
       </Head>
 
       <section className="flex flex-col self-center w-11/12 lg:flex-row">
-        <div className="mr-12  w-1/2 self-center">
+        <div className="mr-12 w-full lg:w-1/2 self-center mb-8 lg:mb-0">
           <LogoTitle />
           <h2 className="mt-12 mb-6">the app for writers</h2>
           <p className="text-lg max-w-lg mb-6">
@@ -62,8 +62,8 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
             accessible.
           </p>
 
-          <div className="card flex px-5 py-5 items-center max-w-2xl">
-            <p className="w-1/2 mr-4">
+          <div className="card flex flex-col md:flex-row px-5 py-5 items-center max-w-2xl">
+            <p className="max-w-2xl md:w-1/2 mr-0 md:mr-4 ">
               Vislit is free and open source software made by a creative writer.
               Quality writing software should be available to anyone who wants
               to finish that first novel or tenth.
@@ -89,12 +89,12 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
         </div>
 
         {/* need to set image max height to 500 */}
-        <div className="w-2/3 block rounded-md">
+        <div className="w-full md:w-2/3 block rounded-md place-self-center">
           <Image
             src={"/images/home/hero.png"}
             layout="responsive"
-            height={500}
-            width={600}
+            height={720}
+            width={1280}
             alt={"test"}
           />
         </div>
