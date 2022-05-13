@@ -10,7 +10,7 @@ const CardFeature: React.FC<{
 }> = ({ header, isReverse = false, children, className }) => {
   return (
     <div
-      className={`${className} flex flex-col sm:flex-col lg:flex-row max-w-5xl max-h-600px]`}
+      className={`${className} flex flex-col sm:flex-col lg:flex-row max-w-5xl max-h-600px`}
     >
       {!isReverse ? (
         <div className="relative w-1/2">

@@ -8,8 +8,8 @@ const CardNews: React.FC<{ article: Article; className?: any }> = ({
   className,
 }) => {
   return (
-    <div className={`${className} flex max-w-5xl max-h-[400px] cursor-pointer`}>
-      <div className="hidden md:block relative w-1/3 self-center">
+    <div className={`${className} flex cursor-pointer bg-gray rounded-md`}>
+      <div className="relative w-1/3 self-center">
         <Image
           src={article.image}
           height="100%"

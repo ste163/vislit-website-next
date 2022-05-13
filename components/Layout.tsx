@@ -67,15 +67,22 @@ const Layout = ({ children }) => {
         setIsHamburgerOpen={setIsHamburgerOpen}
       />
 
-      <main className="grow mx-16 mt-16">{children}</main>
+      <main className="grow mx-16 mt-24">{children}</main>
 
       <footer className="flex flex-col justify-center md:flex-row bg-gray mt-24 py-6">
         <div className="max-w-sm mx-8">
           <p>
             <span className="font-bold">Vislit</span> (a combination of visual +
             literature) is a free and open source desktop writing application
-            released under the AGPL-3 license. The entire source code for this
-            website and the application is available on{" "}
+            released under the{" "}
+            <a
+              className="underline"
+              href="https://www.gnu.org/licenses/agpl-3.0.en.html"
+            >
+              AGPL-3 license
+            </a>
+            . The entire source code for this website and the application is
+            available on{" "}
             <a className="underline" href="https://github.com/ste163/vislit">
               Github
             </a>
