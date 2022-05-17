@@ -103,16 +103,17 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
       <section className="mt-16 self-center">
         <h2 className="mb-4">Latest news</h2>
 
-        <div className="card flex px-6 py-5 h-full">
-          <div className="flex">
-            <Image
-              className="w-1/2"
-              src={articles[0].image}
-              height={175}
-              width={175}
-              alt={articles[0].altText}
-            />
-            <div className="flex flex-col  justify-between ml-3">
+        <div className="card flex flex-col px-6 py-5 h-full md:flex-row">
+          <div className="flex flex-col md:flex-row">
+            <div className="place-self-center mb-2 md:mb-0">
+              <Image
+                src={articles[0].image}
+                height={175}
+                width={175}
+                alt={articles[0].altText}
+              />
+            </div>
+            <div className="flex flex-col justify-between ml-3">
               <div className="flex flex-col">
                 <h3>{articles[0].title}</h3>
                 <p className="my-4">{articles[0].headline}</p>
@@ -126,29 +127,39 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
             </div>
           </div>
 
-          <div className="w-2 bg-black rounded-full mx-8" />
+          <div
+            aria-hidden="true"
+            className="hidden md:block w-2 bg-black rounded-full mx-8"
+          />
+          <div
+            aria-hidden="true"
+            className="block md:hidden w-10/12 bg-black rounded-full mx-8 my-8 h-2"
+          />
 
           <div className="flex flex-col justify-between">
             <div>
-              {articles.map(({ id, title }, index) =>
-                // skip first article as it's already being displayed
-                index === 0 ? null : (
-                  <div
-                    key={id}
-                    className="underline cursor-pointer text-md font-bold"
-                  >
-                    <Link href={`/news/${id}`}>
-                      <div>
-                        <a>{title}</a>
-                      </div>
-                    </Link>
-                  </div>
-                )
-              )}
+              <h3 className="mb-4">More news</h3>
+              <ul>
+                {articles.map(({ id, title }, index) =>
+                  // skip first article as it's already being displayed
+                  index === 0 ? null : (
+                    <li
+                      key={id}
+                      className="underline cursor-pointer text-md font-bold"
+                    >
+                      <Link href={`/news/${id}`}>
+                        <div>
+                          <a>{title}</a>
+                        </div>
+                      </Link>
+                    </li>
+                  )
+                )}
+              </ul>
             </div>
-            <div className="self-center cursor-pointer bg-primary py-2 px-3 font-bold rounded-sm">
+            <div className="self-center cursor-pointer bg-primary py-2 px-3 font-bold rounded-sm mt-8 md:mt-0">
               <Link href={`/news`}>
-                <span>See all news</span>
+                <span>all news</span>
               </Link>
             </div>
           </div>
