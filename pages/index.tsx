@@ -52,8 +52,8 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
         <title>Vislit</title>
       </Head>
 
-      <section className="flex flex-col self-center w-11/12 lg:flex-row">
-        <div className="mr-12 w-full lg:w-1/2 self-center mb-8 lg:mb-0">
+      <section className="flex flex-col self-center w-11/12 md:w-9/12 xl:flex-row">
+        <div className="mr-0 xl:mr-12 w-full xl:w-1/3 self-center mb-8 xl:mb-0">
           <LogoTitle />
           <h2 className="mt-12 mb-6">the app for writers</h2>
           <p className="text-lg max-w-lg mb-6">
@@ -88,11 +88,11 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
           </div>
         </div>
 
-        {/* need to set image max height to 500 */}
-        <div className="w-full md:w-2/3 block rounded-md place-self-center">
+        <div className="relative w-full xl:w-2/3 h-[300px] xl:h-[520px] place-self-center">
           <Image
-            src={"/images/home/hero.png"}
-            layout="responsive"
+            src={"/images/home/hero.webp"}
+            layout="fill"
+            objectFit="contain"
             height={720}
             width={1280}
             alt={"test"}
