@@ -28,7 +28,14 @@ const NewsArticle: React.FC<{ article: Article }> = ({
 
       <div className="flex flex-col place-items-center">
         <figure className="flex flex-col w-fit">
-          <Image src={image} width={500} height={500} alt={altText} />
+          <Image
+            src={image}
+            width={600}
+            height={500}
+            layout="intrinsic"
+            objectFit="cover"
+            alt={altText}
+          />
           <figcaption className="text-right italic">{altText}</figcaption>
         </figure>
 

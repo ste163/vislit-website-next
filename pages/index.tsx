@@ -93,8 +93,6 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
             src={"/images/home/hero.webp"}
             layout="fill"
             objectFit="contain"
-            height={720}
-            width={1280}
             alt={"test"}
           />
         </div>

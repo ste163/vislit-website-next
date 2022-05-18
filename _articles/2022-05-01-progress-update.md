@@ -1,12 +1,12 @@
 ---
 slug: "progress-update-may-2022"
 title: "Progress Update: May 2022"
-headline: "The backend is complete and the interface begins"
-image: /images/2022-04-09-mountain.jpg
-altText: "test"
+headline: "The backend is complete and the interface work begins"
+image: /images/articles/2022-05-01-progress-update.webp
+altText: "All 34 test files failing on Windows"
 date: "2022-05-01"
 ---
 
-To get through finishing Vislit as quickly and efficiently as possible, I decided to scrap all user interface work and focus solely on functionality. It wouldn't matter how nice the interface looked if it didn't actually work.
+To develop Vislit as quickly as possible, I decided to hold-off on all user interface work until the functionality was complete. It's taken nearly two years now, but the functionality is finished! Of course, I haven't done any development on a Windows machine in that same amount of time. The project fails to run on Windows right now.
 
-It's taken some two years now, but nearly all the core functionality that I originally wanted for a version 1.0 is actually in the application! I'll be spending the rest of the year implementing my final mockups and will be having progress updates hopefully every month on the state of the project.
+I'll be spending the rest of the year implementing the mockups (and making it run on Windows).
