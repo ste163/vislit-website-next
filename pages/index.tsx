@@ -23,7 +23,8 @@ const cards = [
   },
   {
     imageSrc: "/images/home/notes.webp",
-    altText: "test",
+    altText:
+      "Close-up of notes section open while on the writing editor is open",
     heading: "Accessible note-taking",
     text: `Anywhere in the application, you can access your notes.
       No swapping between programs to find character references`,
@@ -97,7 +98,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
         </div>
       </section>
 
-      <section className="mt-16 self-center">
+      <section className="w-5/6 max-w-5xl mt-16 self-center">
         <h2 className="mb-4">Latest news</h2>
 
         <div className="card flex flex-col px-6 py-5 h-full md:flex-row">
@@ -171,9 +172,9 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
           features needed for productivity.
         </p>
 
-        <div className="lg:grid gap-10 grid-cols-2 md:flex flex-col">
+        <div className="flex-col flex lg:grid gap-10 grid-cols-2">
           {cards.map(({ imageSrc, altText, heading, text }, index) => (
-            <div key={index} className="md:my-0 sm:my-10">
+            <div key={index} className="my-5 md:my-0">
               <ImageTextOverlay
                 imageSrc={imageSrc}
                 altText={altText}
