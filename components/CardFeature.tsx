@@ -15,7 +15,7 @@ const CardFeature: React.FC<{
       {!isReverse ? (
         <div className="relative w-1/2">
           <Image
-            src={"/images/test-image.png"}
+            src={"/images/home/writer.webp"}
             height="100%"
             width="100%"
             layout="responsive"

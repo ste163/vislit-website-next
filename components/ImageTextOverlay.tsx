@@ -7,6 +7,7 @@ const ImageTextOverlay = ({ imageSrc, altText, heading, text }) => (
       <Image
         src={imageSrc}
         layout="responsive"
+        objectFit="cover"
         height={100}
         width={100}
         alt={altText}

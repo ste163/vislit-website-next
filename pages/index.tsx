@@ -15,33 +15,32 @@ export const getStaticProps = () => {
 
 const cards = [
   {
-    imageSrc: "/images/test-image.png",
-    altText: "test",
-    heading: `Distraction-free writing`,
-    text: `For any sized document with everything you expect from Microsoft
-      Word or Google Docs, but without the bloated extras like "Mail
+    imageSrc: "/images/home/writer.webp",
+    altText: "Writing editor",
+    heading: "Distraction-free writing",
+    text: `Streamlined for any creative writing document without the bloated extras like "Mail
       Merge"`,
   },
   {
-    imageSrc: "/images/test-image.png",
+    imageSrc: "/images/home/notes.webp",
     altText: "test",
-    heading: `Notes anywhere`,
+    heading: "Accessible note-taking",
     text: `Anywhere in the application, you can access your notes.
       No swapping between programs to find character references`,
   },
   {
-    imageSrc: "/images/test-image.png",
-    altText: "test",
-    heading: `Project management`,
+    imageSrc: "/images/home/projects.webp",
+    altText: "List of writing projects and a project summary card",
+    heading: "Clean project management",
     text: `View summary and list information on all of your projects,
       organized by currently in progress, completed, and archived`,
   },
   {
-    imageSrc: "/images/test-image.png",
-    altText: "test",
-    heading: `Goals, Progress, Visualizations`,
+    imageSrc: "/images/home/progress.webp",
+    altText: "Dashboard with graphs of writing progress",
+    heading: "Robust tracking for goals, progress, & visualizations",
     text: `The hardest part about writing is keeping at it.
-      Easily set and modify goals and visualize your progress"`,
+      Easily set and modify goals and visualize your progress`,
   },
 ];
 
@@ -108,6 +107,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
                 src={articles[0].image}
                 height={175}
                 width={175}
+                objectFit="cover"
                 alt={articles[0].altText}
               />
             </div>
@@ -166,9 +166,9 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
 
       <section className="self-center w-5/6 max-w-screen-xl">
         <h2 className="mt-16 mb-6">The new way to write</h2>
-        <p className="text-lg max-w-lg mb-6">
-          With a clean, simple interface designed to keep you writing and only
-          the features needed for productivity.
+        <p className="text-lg max-w-md mb-6">
+          With a clean, simple interface designed to keep you writing. Only the
+          features needed for productivity.
         </p>
 
         <div className="lg:grid gap-10 grid-cols-2 md:flex flex-col">
