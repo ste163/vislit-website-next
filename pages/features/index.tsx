@@ -10,32 +10,49 @@ const Features = () => (
     </Head>
 
     <div className="flex flex-col items-center">
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col mb-4 md:mb-10 lg:flex-row w-3/4 ">
         <div className="hidden sm:block">
           <GraphicFeature />
         </div>
 
         <div className="w-1/2 ml-12">
           <h1 className="mb-4">Only the essentials</h1>
-          <p>
-            Too many writing tools are general purpose or have so many features
-            they're overwhelming. Vislit aims to be as simple as possible, so
-            you can focus on writing, while allowing for managing projects,
-            documents, folders, and notes easily.
+          <p className="mb-4">
+            Many creative writing tools are extremely niche or overloaded with
+            features. Vislit aims to be as simple as possible, so you can focus
+            on writing.
           </p>
-          <p>
-            Vislit focuses on being as simple as possible. - Project management.
-            The core of Vislit is that it keeps your writing projects separated.
-            By selecting or starting a new project, you only see documents,
-            notes, goals, and progress for that project. - Minimal writing
-            editor. For the most used formatting needs and easy file backups. -
-            Global note editor. Have any of your project notes available
-            anywhere - Goals. Set word count goals for every day, week, or
-            month. - Progress. Track whether you proofread, edited, revised,
-            along with how many words you write - Visualization. See your
-            progress in a dashboard and receive suggestions on how you can
-            improve on your goals
-          </p>
+          <ul className="list-disc pl-8">
+            <li>
+              <strong>Project management</strong>. At Vislit's core are
+              projects. Each project contains its own documents, notes, goals,
+              and progress. All the organization is handled for you.
+            </li>
+            <li>
+              <strong>Writing editor</strong>. It contains the most-used
+              formatting options, the ability to scale to any page size, and has
+              easy file backups.
+            </li>
+            <li>
+              <strong>Notes</strong>. Open you project notes anywhere in Vislit.
+              Whether that's if you're in the middle of a writing session or if
+              you have a great idea from the progress table.
+            </li>
+            <li>
+              <strong>Goals</strong>. All your work counts towards your goal, so
+              track it! Set word count goals for how much you'd like to write
+              along with whether proofreading, editing, or revising also counts
+              towards goal completion.
+            </li>
+            <li>
+              <strong>Progress</strong>. For every day of the month, track what
+              you did whether that's write 2,000 words or proofread 10,000.
+            </li>
+            <li>
+              <strong>Visualization</strong>. See your progress in a dashboard
+              and receive suggestions on how you can improve on your goals.
+            </li>
+          </ul>
         </div>
       </div>
 
