@@ -10,12 +10,12 @@ const Features = () => (
     </Head>
 
     <div className="flex flex-col items-center">
-      <div className="flex flex-col mb-4 md:mb-10 lg:flex-row w-3/4 ">
-        <div className="hidden sm:block">
+      <div className="flex flex-col w-4/5 mb-4 md:mb-10 lg:flex-row xl:w-3/4">
+        <div className="hidden lg:block">
           <GraphicFeature />
         </div>
 
-        <div className="w-1/2 ml-12">
+        <div className="w-11/12 xl:w-1/2 ml-12">
           <h1 className="mb-4">Only the essentials</h1>
           <p className="mb-4">
             Many creative writing tools are extremely niche or overloaded with
@@ -56,7 +56,11 @@ const Features = () => (
         </div>
       </div>
 
-      <CardFeature header="Projects at the core" className="mb-12" isReverse>
+      <CardFeature
+        header="Projects at the core"
+        className="mb-12 items-center lg:items-stretch"
+        isReverse
+      >
         <p>
           Each project you create has its own document files, note files, goals,
           and progress. By keeping them separate and organized automatically,
@@ -68,7 +72,7 @@ const Features = () => (
 
       <CardFeature
         header="Minimalist writing and note taking"
-        className="mb-12"
+        className="mb-12 items-center lg:items-stretch"
       >
         <p className="mb-8">
           Most features in well-known writing software (like Word and Google
@@ -85,7 +89,11 @@ const Features = () => (
         </p>
       </CardFeature>
 
-      <CardFeature header="Set your writing goals" className="mb-12" isReverse>
+      <CardFeature
+        header="Set your writing goals"
+        className="mb-12 items-center lg:items-stretch"
+        isReverse
+      >
         <p className="mb-8">
           The best way to finish anything is by setting a goal. That's why
           Vislit allows for easy goal setting. If you set an ambitious goal of
@@ -100,7 +108,10 @@ const Features = () => (
         </p>
       </CardFeature>
 
-      <CardFeature header="See your progress" className="mb-12">
+      <CardFeature
+        header="See your progress"
+        className="mb-12 items-center lg:items-stretch"
+      >
         <p>
           Not only will you have more pages, but as you enter your progress,
           your visualization dashboard will develop, giving you insight into how
@@ -111,7 +122,7 @@ const Features = () => (
 
       <CardFeature
         header="Security and data privacy"
-        className="mb-12"
+        className="mb-12 items-center lg:items-stretch"
         isReverse
       >
         <p>
