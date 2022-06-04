@@ -44,7 +44,7 @@ const NewsArticle: React.FC<{ article: Article }> = ({
           <p className="italic">{date}</p>
           <h2 className="mt-4">{headline}</h2>
           <div
-            className="leading-relaxed article-spacing"
+            className="leading-relaxed article-spacing max-w-2xl"
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           />
         </div>
