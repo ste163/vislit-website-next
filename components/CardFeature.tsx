@@ -10,20 +10,20 @@ const CardFeature: React.FC<{
 }> = ({ header, isReverse = false, children, className }) => {
   return (
     <div
-      className={`${className} flex flex-col sm:flex-col lg:flex-row max-w-5xl max-h-600px`}
+      className={`${className} flex ${
+        isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
+      } flex-col max-w-5xl max-h-600px`}
     >
-      {!isReverse ? (
-        <div className="relative w-4/5 lg:w-1/2">
-          <Image
-            src={"/images/home/writer.webp"}
-            height="100%"
-            width="100%"
-            layout="responsive"
-            objectFit="cover"
-            alt={"something"}
-          />
-        </div>
-      ) : null}
+      <div className="relative w-4/5 lg:w-1/2">
+        <Image
+          src={"/images/home/writer.webp"}
+          height="100%"
+          width="100%"
+          layout="responsive"
+          objectFit="cover"
+          alt={"something"}
+        />
+      </div>
 
       <Card
         header={header}
@@ -31,19 +31,6 @@ const CardFeature: React.FC<{
       >
         {children}
       </Card>
-
-      {isReverse ? (
-        <div className="relative w-4/5 lg:w-1/2">
-          <Image
-            src={"/images/test-image.png"}
-            height="100%"
-            width="100%"
-            layout="responsive"
-            objectFit="cover"
-            alt={"something"}
-          />
-        </div>
-      ) : null}
     </div>
   );
 };

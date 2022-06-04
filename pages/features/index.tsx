@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Card from "../../components/Card";
 import CardFeature from "../../components/CardFeature";
 import GraphicFeature from "../../components/GraphicFeature";
 
@@ -18,39 +19,40 @@ const Features = () => (
         <div className="w-11/12 xl:w-1/2 ml-12">
           <h1 className="mb-4">Only the essentials</h1>
           <p className="mb-4">
-            Many creative writing tools are extremely niche or overloaded with
-            features. Vislit aims to be as simple as possible, so you can focus
-            on writing.
+            Many creative writing tools are extremely niche, adding yet another
+            piece of software to use, or overloaded with features you don't use.
+            Vislit aims to be simple and opinionated for productive writing.
           </p>
-          <ul className="list-disc pl-8">
+          <ul className="bullet-list list-disc pl-8">
             <li>
-              <strong>Project management</strong>. At Vislit's core are
-              projects. Each project contains its own documents, notes, goals,
-              and progress. All the organization is handled for you.
+              <strong>Project management</strong> is the core. Each project is
+              organized for you and contains its own documents, notes, goals,
+              and progress.
             </li>
             <li>
-              <strong>Writing editor</strong>. It contains the most-used
-              formatting options, the ability to scale to any page size, and has
-              easy file backups.
+              <strong>Writing editor</strong> contains common formatting
+              options, spell-checking, file backups, and support for any page
+              amount.
             </li>
             <li>
-              <strong>Notes</strong>. Open you project notes anywhere in Vislit.
-              Whether that's if you're in the middle of a writing session or if
-              you have a great idea from the progress table.
+              <strong>Note-taking</strong> anywhere in the application, whether
+              in the middle of a writing session or if you have a great idea
+              while viewing your dashboard.
             </li>
             <li>
-              <strong>Goals</strong>. All your work counts towards your goal, so
-              track it! Set word count goals for how much you'd like to write
-              along with whether proofreading, editing, or revising also counts
-              towards goal completion.
+              <strong>Goal-setting</strong> to count all your work. Set word
+              count goals for how much you'd like to write along with whether
+              proofreading, editing, or revising also counts towards goal
+              completion.
             </li>
             <li>
-              <strong>Progress</strong>. For every day of the month, track what
-              you did whether that's write 2,000 words or proofread 10,000.
+              <strong>Track progress</strong> for any amount of days of the
+              month. Log your work whether that's writing 2,000 words or
+              proofreading 5,000.
             </li>
             <li>
-              <strong>Visualization</strong>. See your progress in a dashboard
-              and receive suggestions on how you can improve on your goals.
+              <strong>Visualize</strong> your progress in a dashboard and
+              receive suggestions on how you can improve on your goals.
             </li>
           </ul>
         </div>
@@ -128,28 +130,59 @@ const Features = () => (
         <p>
           Vislit is secure and private by design. The entire source code used to
           create Vislit is freely available for review, scrutiny, and
-          improvement on Github (link).
+          improvement on{" "}
+          <a className="underline" href="https://github.com/ste163/vislit">
+            Github
+          </a>
+          .
         </p>
 
-        <p>
-          Vislit saves your documents and notes as HTML files which can be
+        <p className="my-8">
+          Vislit saves your documents and notes as HTML files that can be
           imported into any writing editor. Its local database is stored in
           JSON, another standard and highly transferrable data format.
         </p>
 
-        <p>
+        <p className="mb-8">
           Vislit only connects to the internet when it's checking for updated
           versions and knows nothing about your data.
         </p>
 
         <p>
           If you'd like to use Vislit on multiple computers, you can store your
-          data in a Google Drive, Dropbox, or any other cloud syncing service,
-          and it all "just works!"
+          data in a Google Drive, Dropbox, OneDrive, or any other cloud syncing
+          service.
         </p>
       </CardFeature>
 
-      <div>timeline</div>
+      <Card className={"mb-12 flex flex-col lg:flex-row"}>
+        <div className="max-w-sm">
+          <h2>Roadmap</h2>
+          <p>
+            After version 1.0 release, roadmap could readjust based on user
+            feedback.
+          </p>
+
+          <p className="my-4">
+            To see real-time progress on what's being worked on, visit the{" "}
+            <a
+              className="underline"
+              href="https://github.com/ste163/vislit/projects"
+            >
+              Github Project page
+            </a>
+            .
+          </p>
+
+          <p>
+            Have a suggestion on what features you'd like to see in a future
+            release, add a topic in the Discussion section (note: this will
+            require a free Github account.)
+          </p>
+        </div>
+
+        <div>timeline</div>
+      </Card>
 
       <div className="bg-gray flex justify-center w-full py-5 max-w-xl rounded-md">
         <div className="w-1/2 flex flex-col items-center">
