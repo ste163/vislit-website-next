@@ -3,6 +3,7 @@ import Link from "next/link";
 import Card from "../../components/Card";
 import CardFeature from "../../components/CardFeature";
 import GraphicFeature from "../../components/GraphicFeature";
+import IconCheckmark from "../../components/IconCheckmark";
 
 const Features = () => (
   <>
@@ -182,8 +183,8 @@ const Features = () => (
               href="https://github.com/ste163/vislit/discussions"
             >
               Discussion section on Github
-            </a>{" "}
-            (note: this will require a free Github account.)!
+            </a>
+            ! (This requires signing up for a free Github account.)
           </p>
         </div>
 
@@ -191,7 +192,9 @@ const Features = () => (
           <li className="timeline-bullet flex items-center relative">
             <h3 className="w-48">2021</h3>
             <div className="bg-primary border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center">
-              X
+              <div className="pt-[3px] pl-[1px] scale-75">
+                <IconCheckmark />
+              </div>
             </div>
             <div>Functioning prototype</div>
           </li>
@@ -211,7 +214,7 @@ const Features = () => (
           <li className="timeline-bullet flex items-center relative">
             <h3 className="w-48">late-2022/early-2023</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
-            <div>1.0 Release</div>
+            <div>1.0 release</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
@@ -221,7 +224,7 @@ const Features = () => (
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-48"></h3>
+            <div className="w-48"></div>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Note-canvas, project stages</div>
           </li>
