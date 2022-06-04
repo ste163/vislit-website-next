@@ -41,6 +41,26 @@
   @apply my-2;
 }
 
+/* timeline */
+.timeline-bullet {
+  margin-bottom: 1em;
+}
+
+.timeline-bullet::before {
+  content: "";
+  position: absolute;
+  top: 1.8em;
+  left: 13.85em;
+  width: 0.3em;
+  height: 1.4em;
+  background: #3772ff;
+  z-index: 1;
+}
+
+.timeline-bullet:last-child::before {
+  display: none;
+}
+
 /* nav bar hamburger */
 .hamburger-container {
   display: flex;

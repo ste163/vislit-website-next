@@ -156,7 +156,7 @@ const Features = () => (
       </CardFeature>
 
       <Card className={"mb-12 flex flex-col lg:flex-row"}>
-        <div className="max-w-sm">
+        <div className="max-w-sm mr-0 lg:mr-8">
           <h2>Roadmap</h2>
           <p>
             After version 1.0 release, roadmap could readjust based on user
@@ -176,12 +176,56 @@ const Features = () => (
 
           <p>
             Have a suggestion on what features you'd like to see in a future
-            release, add a topic in the Discussion section (note: this will
-            require a free Github account.)
+            release, add a topic in the{" "}
+            <a
+              className="underline"
+              href="https://github.com/ste163/vislit/discussions"
+            >
+              Discussion section on Github
+            </a>{" "}
+            (note: this will require a free Github account.)!
           </p>
         </div>
 
-        <div>timeline</div>
+        <ul className="mt-8 lg:mt-0">
+          <li className="timeline-bullet flex items-center relative">
+            <h3 className="w-48">2021</h3>
+            <div className="bg-primary border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center">
+              X
+            </div>
+            <div>Functioning prototype</div>
+          </li>
+
+          <li className="timeline-bullet flex items-center relative">
+            <h3 className="w-48">mid-2022</h3>
+            <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
+            <div>Implement final designs</div>
+          </li>
+
+          <li className="timeline-bullet flex items-center relative">
+            <h3 className="w-48">late-2022</h3>
+            <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
+            <div>Test release(s)</div>
+          </li>
+
+          <li className="timeline-bullet flex items-center relative">
+            <h3 className="w-48">late-2022/early-2023</h3>
+            <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
+            <div>1.0 Release</div>
+          </li>
+
+          <li className="timeline-bullet flex items-center relative">
+            <h3 className="w-48">2023+</h3>
+            <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
+            <div>Thesaurus integration</div>
+          </li>
+
+          <li className="timeline-bullet flex items-center relative">
+            <h3 className="w-48"></h3>
+            <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
+            <div>Note-canvas, project stages</div>
+          </li>
+        </ul>
       </Card>
 
       <div className="bg-gray flex justify-center w-full py-5 max-w-xl rounded-md">
