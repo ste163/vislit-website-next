@@ -12,8 +12,8 @@ const Features = () => (
     </Head>
 
     <div className="flex flex-col items-center">
-      <div className="flex flex-col w-4/5 mb-4 md:mb-10 lg:flex-row xl:w-3/4">
-        <div className="hidden lg:block">
+      <div className="flex flex-col w-4/5 mb-4 md:mb-10 xl:flex-row xl:w-3/4">
+        <div className="hidden lg:block lg:scale-75 xl:scale-100">
           <GraphicFeature />
         </div>
 
@@ -80,15 +80,14 @@ const Features = () => (
         <p className="mb-8">
           Most features in well-known writing software (like Word and Google
           Docs) are geared for office work or live collaboration. This can be
-          great in some situations, but Vislit includes only what's necessary
+          great in certain situations, but Vislit includes only what's necessary
           for efficient creative writing, making the interface uncluttered,
           simple, and fast.
         </p>
         <p>
-          By integrating note-taking, you no longer need to manage multiple
-          files or jump to another program. And by having notes available from
-          anywhere on the app, you can reference them in the middle of a writing
-          session without losing your place.
+          By integrating notes, you no longer need to manage files or jump to
+          another program. By having notes available from anywhere in the app,
+          never lose an idea!
         </p>
       </CardFeature>
 
@@ -102,12 +101,13 @@ const Features = () => (
           Vislit allows for easy goal setting. If you set an ambitious goal of
           writing 1000 words every day (about 4 or 5 pages), but find that's too
           much, you can modify your goal. You'll be able to keep track of your
-          previous goals in the goal log to see how you've changed over time.
+          previous goals in the goal log to see how you've modified them over
+          time.
         </p>
         <p>
           Maybe you didn't write 1000 words every day, but you spent an hour
           proofreading, editing, or revising? That's great, too! Those can count
-          towards goal completion so you track of all of your hard work!
+          towards goal completion so you track all of your hard work!
         </p>
       </CardFeature>
 
@@ -119,7 +119,8 @@ const Features = () => (
           Not only will you have more pages, but as you enter your progress,
           your visualization dashboard will develop, giving you insight into how
           you write and the best times you write. Make changes to increase your
-          goals or relax them if it's too much.
+          goals or relax them if it's too much. Receive suggestions on changes
+          you could make.
         </p>
       </CardFeature>
 
@@ -140,19 +141,20 @@ const Features = () => (
 
         <p className="my-8">
           Vislit saves your documents and notes as HTML files that can be
-          imported into any writing editor. Its local database is stored in
-          JSON, another standard and highly transferrable data format.
+          imported into any writing editor if you try Vislit out but don't like
+          it. Its local database is stored in JSON, another standard and highly
+          transferrable data format.
         </p>
 
         <p className="mb-8">
           Vislit only connects to the internet when it's checking for updated
-          versions and knows nothing about your data.
+          versions and knows nothing about you or your data.
         </p>
 
         <p>
-          If you'd like to use Vislit on multiple computers, you can store your
-          data in a Google Drive, Dropbox, OneDrive, or any other cloud syncing
-          service.
+          If you'd like to use Vislit on multiple computers or with the Cloud,
+          set Vislit to save its database in Google Drive, Dropbox, OneDrive, or
+          any other cloud syncing service.
         </p>
       </CardFeature>
 
@@ -165,7 +167,7 @@ const Features = () => (
           </p>
 
           <p className="my-4">
-            To see real-time progress on what's being worked on, visit the{" "}
+            To see real-time progress, visit the{" "}
             <a
               className="underline"
               href="https://github.com/ste163/vislit/projects"
@@ -177,7 +179,7 @@ const Features = () => (
 
           <p>
             Have a suggestion on what features you'd like to see in a future
-            release, add a topic in the{" "}
+            release, add a suggestion in the{" "}
             <a
               className="underline"
               href="https://github.com/ste163/vislit/discussions"
@@ -188,9 +190,9 @@ const Features = () => (
           </p>
         </div>
 
-        <ul className="mt-8 lg:mt-0">
+        <ul className="mt-8 lg:mt-0 min-w-max">
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-48">2021</h3>
+            <h3 className="w-48 text-right">2021</h3>
             <div className="bg-primary border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center">
               <div className="pt-[3px] pl-[1px] scale-75">
                 <IconCheckmark />
@@ -200,31 +202,31 @@ const Features = () => (
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-48">mid-2022</h3>
+            <h3 className="w-48 text-right">mid-2022</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Implement final designs</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-48">late-2022</h3>
+            <h3 className="w-48 text-right">late-2022</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Test release(s)</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-48">late-2022/early-2023</h3>
+            <h3 className="w-48 text-right">late-2022/early-2023</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>1.0 release</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-48">2023+</h3>
+            <h3 className="w-48 text-right">2023+</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Thesaurus integration</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <div className="w-48"></div>
+            <div className="w-48 text-right"></div>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Note-canvas, project stages</div>
           </li>
