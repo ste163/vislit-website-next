@@ -12,12 +12,12 @@ const Features = () => (
     </Head>
 
     <div className="flex flex-col items-center">
-      <div className="flex flex-col w-4/5 mb-4 md:mb-10 xl:flex-row xl:w-3/4">
-        <div className="hidden lg:block lg:scale-75 xl:scale-100">
+      <div className="flex flex-col mb-4 md:mb-10 xl:flex-row">
+        <div className="hidden xl:block">
           <GraphicFeature />
         </div>
 
-        <div className="w-11/12 xl:w-1/2 ml-12">
+        <div className="w-11/12 xl:w-1/2 ml-0 xl:ml-12 max-w-2xl">
           <h1 className="mb-4">Only the essentials</h1>
           <p className="mb-4">
             Many creative writing tools are extremely niche, adding yet another
@@ -159,7 +159,7 @@ const Features = () => (
       </CardFeature>
 
       <Card className={"mb-12 flex flex-col lg:flex-row"}>
-        <div className="max-w-sm mr-0 lg:mr-8">
+        <div className="max-w-sm mr-0 lg:mr-4">
           <h2>Roadmap</h2>
           <p>
             After version 1.0 release, roadmap could readjust based on user
@@ -192,7 +192,7 @@ const Features = () => (
 
         <ul className="mt-8 lg:mt-0 min-w-max">
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-48 text-right">2021</h3>
+            <h3 className="w-36 text-right">2021</h3>
             <div className="bg-primary border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center">
               <div className="pt-[3px] pl-[1px] scale-75">
                 <IconCheckmark />
@@ -202,31 +202,31 @@ const Features = () => (
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-48 text-right">mid-2022</h3>
+            <h3 className="w-36 text-right">mid-2022</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Implement final designs</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-48 text-right">late-2022</h3>
+            <h3 className="w-36 text-right">late-2022</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Test release(s)</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-48 text-right">late-2022/early-2023</h3>
+            <h3 className="w-36 text-right">early-2023</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>1.0 release</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-48 text-right">2023+</h3>
+            <h3 className="w-36 text-right">2023+</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Thesaurus integration</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <div className="w-48 text-right"></div>
+            <div className="w-36 text-right"></div>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Note-canvas, project stages</div>
           </li>
@@ -242,7 +242,7 @@ const Features = () => (
             <div className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer">
               <span className="text-2xl font-bold">Download</span>
               <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
-                v1.0
+                TBD
               </div>
               <span>Linux, Mac, Windows</span>
             </div>

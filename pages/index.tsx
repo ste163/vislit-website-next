@@ -34,7 +34,7 @@ const cards = [
     altText: "List of writing projects and a project summary card",
     heading: "Clean project management",
     text: `View summary and list information on all of your projects,
-      organized by currently in progress, completed, and archived`,
+      organized by in-progress, completed, and archived`,
   },
   {
     imageSrc: "/images/home/progress.webp",
@@ -52,8 +52,8 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
         <title>Vislit</title>
       </Head>
 
-      <section className="flex flex-col self-center w-11/12 md:w-9/12 xl:flex-row">
-        <div className="mr-0 xl:mr-12 w-full xl:w-1/3 self-center mb-8 xl:mb-0">
+      <section className="flex flex-col lg:flex-row self-center w-full 2xl:w-10/12">
+        <div className="mr-0 lg:mr-12 w-full lg:w-2/3 self-center mb-8 xl:mb-0">
           <LogoTitle />
           <h2 className="mt-12 mb-6">the app for writers</h2>
           <p className="text-lg max-w-lg mb-6">
@@ -63,7 +63,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
           </p>
 
           <div className="card flex flex-col md:flex-row px-5 py-5 items-center max-w-2xl">
-            <p className="max-w-2xl md:w-1/2 mr-0 md:mr-4 ">
+            <p className="max-w-md md:w-1/2 mb-4 md:mb-0 mr-0 md:mr-4">
               Vislit is free and open source software made by a creative writer.
               Quality writing software should be available to anyone who wants
               to finish that first novel or tenth.
@@ -74,7 +74,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
                 <div className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer">
                   <span className="text-2xl font-bold">Download</span>
                   <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
-                    v1.0
+                    TBD
                   </div>
                   <span>Linux, Mac, Windows</span>
                 </div>
@@ -88,12 +88,12 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
           </div>
         </div>
 
-        <div className="relative w-full xl:w-2/3 h-[300px] xl:h-[520px] place-self-center">
+        <div className="relative place-self-center w-full h-[300px] lg:h-[520px]">
           <Image
             src={"/images/home/hero.webp"}
             layout="fill"
             objectFit="contain"
-            alt={"test"}
+            alt={"Vislit's summary page with note editor open"}
           />
         </div>
       </section>
@@ -128,11 +128,11 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
 
           <div
             aria-hidden="true"
-            className="hidden md:block w-2 bg-black rounded-full mx-8"
+            className="hidden md:block w-1 bg-black rounded-full mx-8"
           />
           <div
             aria-hidden="true"
-            className="block md:hidden w-10/12 bg-black rounded-full mx-8 my-8 h-2"
+            className="block md:hidden w-full bg-black rounded-full my-8 h-1"
           />
 
           <div className="flex flex-col justify-between">
