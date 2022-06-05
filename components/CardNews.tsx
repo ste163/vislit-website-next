@@ -8,8 +8,10 @@ const CardNews: React.FC<{ article: Article; className?: any }> = ({
   className,
 }) => {
   return (
-    <div className={`${className} flex cursor-pointer bg-gray rounded-md`}>
-      <div className="relative w-1/3 self-center">
+    <div
+      className={`${className} flex flex-col sm:flex-row cursor-pointer bg-gray rounded-md`}
+    >
+      <div className="relative w-2/3 sm:w-1/3 self-center pt-2 sm:pt-0">
         <Image
           src={article.image}
           height="100%"
@@ -20,7 +22,7 @@ const CardNews: React.FC<{ article: Article; className?: any }> = ({
         />
       </div>
 
-      <Card header={article.title} className="w-2/3 rounded-none rounded-r-md">
+      <Card header={article.title} className="rounded-r-md">
         <div>
           <span>{article.date}</span>
         </div>

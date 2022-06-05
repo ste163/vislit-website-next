@@ -28,7 +28,7 @@ const cards = [
       "Close-up of notes section open while on the writing editor is open",
     heading: "Accessible note-taking",
     text: `Anywhere in the application, you can access your notes.
-      No swapping between programs to find character references`,
+      No more swapping between programs and losing your flow`,
     link: "/features#writer",
   },
   {
@@ -73,8 +73,8 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
           <div className="card flex flex-col md:flex-row px-5 py-5 items-center max-w-2xl">
             <p className="max-w-md md:w-1/2 mb-4 md:mb-0 mr-0 md:mr-4">
               Vislit is free and open source software made by a creative writer.
-              Quality writing software should be available to anyone who wants
-              to finish that first novel or tenth.
+              Powerful writing software should be available to anyone who wants
+              to finish that first novel or fifth.
             </p>
 
             <div className="w-1/2 flex flex-col items-center">
@@ -107,7 +107,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
       </section>
 
       <section className="w-5/6 max-w-5xl mt-16 self-center">
-        <h2 className="mb-4">Latest news</h2>
+        <h2 className="mb-4">latest news</h2>
 
         <div className="card flex flex-col px-6 py-5 h-full md:flex-row">
           <div className="flex flex-col md:flex-row">
@@ -143,7 +143,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
 
           <div className="flex flex-col justify-between">
             <div>
-              <h3 className="mb-4">More news</h3>
+              <h3 className="mb-4">Recent news</h3>
               <ul>
                 {articles.map(({ id, title }, index) =>
                   // skip first article as it's already being displayed
@@ -170,7 +170,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
       </section>
 
       <section className="self-center w-5/6 max-w-screen-xl">
-        <h2 className="mt-16 mb-6">The new way to write</h2>
+        <h2 className="mt-16 mb-6">the new way to write</h2>
         <p className="text-lg max-w-md mb-6">
           With a clean, simple interface designed to keep you writing. Only the
           features needed for productivity.

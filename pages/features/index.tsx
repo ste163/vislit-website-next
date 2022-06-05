@@ -24,9 +24,10 @@ const Features = () => (
         <div className="w-11/12 xl:w-1/2 ml-0 xl:ml-12 max-w-2xl">
           <h1 className="mb-4">Only the essentials</h1>
           <p className="mb-4">
-            Many creative writing tools are extremely niche, adding yet another
-            piece of software to use, or overloaded with features you don't use.
-            Vislit aims to be simple and opinionated for productive writing.
+            Many creative writing tools are too niche or overloaded with
+            features that are too complex and intimidating. Vislit aims to be a
+            simple, opinionated replacement for Word, Google Docs, OneNote, etc.
+            One application focused only for creative writing.
           </p>
           <ul className="bullet-list list-disc pl-8">
             <li>
@@ -42,10 +43,10 @@ const Features = () => (
             <li>
               <strong>Note-taking</strong> anywhere in the application, whether
               in the middle of a writing session or if you have a great idea
-              while viewing your dashboard.
+              while viewing your progress dashboard.
             </li>
             <li>
-              <strong>Goal-setting</strong> to count all your work. Set word
+              <strong>Goal-setting</strong> to count all of your work. Set word
               count goals for how much you'd like to write along with whether
               proofreading, editing, or revising also counts towards goal
               completion.
@@ -70,11 +71,11 @@ const Features = () => (
         isReverse
       >
         <p>
-          Each project you create has its own document files, note files, goals,
-          and progress. By keeping them separate and organized automatically,
-          you'll always be able to find old work and stay focused on the
-          current. Finished a project? Set it is as completed. Not going to
-          finish that story, but don't want to delete it? Archive it.
+          Each project has its own document files, note files, goals, and
+          progress. By keeping them separate and organized automatically, you'll
+          always be able to find old work and stay focused on the current.
+          Finished a project? Set it is as completed. Not going to finish that
+          story, but don't want to delete it? Archive it.
         </p>
       </CardFeature>
 
@@ -84,16 +85,15 @@ const Features = () => (
         className="mb-12 items-center lg:items-stretch"
       >
         <p className="mb-8">
-          Most features in well-known writing software (like Word and Google
-          Docs) are geared for office work or live collaboration. This can be
-          great in certain situations, but Vislit includes only what's necessary
-          for efficient creative writing, making the interface uncluttered,
-          simple, and fast.
+          Most features in well-known writing software like Word and Google Docs
+          are geared for office work or live collaboration. Vislit includes only
+          what's necessary for efficient creative writing, making the interface
+          uncluttered, simple, and fast.
         </p>
         <p>
-          By integrating notes, you no longer need to manage files or jump to
-          another program. By having notes available from anywhere in the app,
-          never lose an idea!
+          By integrating note-taking, you no longer need to manage files or jump
+          to another program. Stay in the flow by having your notes side-by-side
+          with your main story.
         </p>
       </CardFeature>
 
@@ -106,14 +106,13 @@ const Features = () => (
         <p className="mb-8">
           The best way to finish anything is by setting a goal. That's why
           Vislit allows for easy goal setting. If you set an ambitious goal of
-          writing 1000 words every day (about 4 or 5 pages), but find that's too
-          much, you can modify your goal. You'll be able to keep track of your
-          previous goals in the goal log to see how you've modified them over
-          time.
+          writing 1000 words every day (about four or five pages), but find
+          that's too much, modify your goal. Vislit will keep a log of every
+          change you make to your goals.
         </p>
         <p>
           Maybe you didn't write 1000 words every day, but you spent an hour
-          proofreading, editing, or revising? That's great, too! Those can count
+          proofreading, editing, or revising. That's great, too! Those can count
           towards goal completion so you track all of your hard work!
         </p>
       </CardFeature>
@@ -127,8 +126,8 @@ const Features = () => (
           Not only will you have more pages, but as you enter your progress,
           your visualization dashboard will develop, giving you insight into how
           you write and the best times you write. Make changes to increase your
-          goals or relax them if it's too much. Receive suggestions on changes
-          you could make.
+          goals or relax them if it's too much. Vislit suggests modifications to
+          your goals if you consistently exceed or miss them.
         </p>
       </CardFeature>
 
@@ -154,10 +153,10 @@ const Features = () => (
         </p>
 
         <p className="my-8">
-          Vislit saves your documents and notes as HTML files that can be
-          imported into any writing editor if you try Vislit out but don't like
-          it. Its local database is stored in JSON, another standard and highly
-          transferrable data format.
+          If you try Vislit out but decide it isn't for you, no worries! Vislit
+          saves your documents and notes as HTML files that can be imported into
+          any other writing editor. Its database is stored in JSON, another
+          standard and highly transferrable data format.
         </p>
 
         <p className="mb-8">
@@ -166,7 +165,7 @@ const Features = () => (
         </p>
 
         <p>
-          If you'd like to use Vislit on multiple computers or with the Cloud,
+          If you'd like to use Vislit on multiple computers or with the cloud,
           set Vislit to save its database in Google Drive, Dropbox, OneDrive, or
           any other cloud syncing service.
         </p>

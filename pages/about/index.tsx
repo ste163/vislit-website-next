@@ -25,9 +25,8 @@ const About = () => (
               AGPL-3 license
             </a>
             . This license gives you the freedom to use and modify Vislit anyway
-            you see fit. It's yours forever! The only ask is that if you make
-            code improvements and want to release your own version, you make
-            those changes also under the{" "}
+            you see fit. It's yours forever! The only ask is that if you take
+            Vislit and make a Vislit 2, you release it under the{" "}
             <a
               className="underline"
               href="https://www.gnu.org/licenses/agpl-3.0.en.html"
@@ -36,7 +35,7 @@ const About = () => (
             >
               AGPL-3 license
             </a>{" "}
-            so that Vislit stays free forever.
+            , too, so that Vislit stays free forever.
           </p>
           <p>
             Vislit is developed using the Electron framework, also used by
@@ -96,7 +95,7 @@ const About = () => (
               {" "}
               vite-electron-builder
             </a>
-            , but has since been modified to suite Vislit's needs.
+            , but has since been modified to suit Vislit's needs.
           </p>
           <p>Shannon Swenton for logo design.</p>
         </Card>
