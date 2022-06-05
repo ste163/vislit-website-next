@@ -6,6 +6,7 @@ const GraphicFeature: React.FC = () => (
     height="450"
     viewBox="0 0 153.72292 159.01458"
     style={{ maxWidth: "450px" }}
+    aria-hidden="true"
   >
     <title>Feature Page Graphic</title>
     <g transform="translate(-15.752234,7.9404229)">

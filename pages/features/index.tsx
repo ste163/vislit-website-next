@@ -141,7 +141,8 @@ const Features = () => (
           <a
             className="underline"
             href="https://github.com/ste163/vislit"
-            target={"_blank"} rel="noreferrer"
+            target={"_blank"}
+            rel="noreferrer"
           >
             Github
           </a>
@@ -180,7 +181,8 @@ const Features = () => (
             <a
               className="underline"
               href="https://github.com/ste163/vislit/projects"
-              target={"_blank"} rel="noreferrer"
+              target={"_blank"}
+              rel="noreferrer"
             >
               Github Project page
             </a>
@@ -193,7 +195,8 @@ const Features = () => (
             <a
               className="underline"
               href="https://github.com/ste163/vislit/discussions"
-              target={"_blank"} rel="noreferrer"
+              target={"_blank"}
+              rel="noreferrer"
             >
               Discussion section on Github
             </a>
@@ -250,13 +253,13 @@ const Features = () => (
             Ready to start writing?
           </h2>
           <Link href="/download">
-            <div className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer">
+            <a className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer">
               <span className="text-2xl font-bold">Download</span>
               <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
                 TBD
               </div>
               <span>Linux, Mac, Windows</span>
-            </div>
+            </a>
           </Link>
         </div>
       </div>

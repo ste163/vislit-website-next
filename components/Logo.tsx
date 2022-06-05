@@ -1,7 +1,7 @@
 import React from "react";
 
 const Logo = () => (
-  <svg width="30" height="30" viewBox="0 0 25 25">
+  <svg width="30" height="30" viewBox="0 0 25 25" aria-hidden="true">
     <title>Vislit Logo</title>
     <path
       id="line-l"

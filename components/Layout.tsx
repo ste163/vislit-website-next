@@ -78,7 +78,8 @@ const Layout = ({ children }) => {
             <a
               className="underline"
               href="https://www.gnu.org/licenses/agpl-3.0.en.html"
-              target={"_blank"} rel="noreferrer"
+              target={"_blank"}
+              rel="noreferrer"
             >
               AGPL-3 license
             </a>
@@ -87,7 +88,8 @@ const Layout = ({ children }) => {
             <a
               className="underline"
               href="https://github.com/ste163/vislit"
-              target={"_blank"} rel="noreferrer"
+              target={"_blank"}
+              rel="noreferrer"
             >
               Github
             </a>
@@ -97,19 +99,29 @@ const Layout = ({ children }) => {
 
         <ul className="font-bold mx-8 md:mt-0 mt-4">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
           </li>
           <li>
-            <Link href="/features">Features</Link>
+            <Link href="/features">
+              <a>Features</a>
+            </Link>
           </li>
           <li>
-            <Link href="/news">News</Link>
+            <Link href="/news">
+              <a>News</a>
+            </Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about">
+              <a>About</a>
+            </Link>
           </li>
           <li>
-            <Link href="/download">Download</Link>
+            <Link href="/download">
+              <a>Download</a>
+            </Link>
           </li>
         </ul>
       </footer>
