@@ -60,6 +60,7 @@ const Features = () => (
       </div>
 
       <CardFeature
+        id="projects"
         header="Projects at the core"
         className="mb-12 items-center lg:items-stretch"
         isReverse
@@ -74,6 +75,7 @@ const Features = () => (
       </CardFeature>
 
       <CardFeature
+        id="writer"
         header="Minimalist writing and note taking"
         className="mb-12 items-center lg:items-stretch"
       >
@@ -92,6 +94,7 @@ const Features = () => (
       </CardFeature>
 
       <CardFeature
+        id="goals"
         header="Set your writing goals"
         className="mb-12 items-center lg:items-stretch"
         isReverse
@@ -112,6 +115,7 @@ const Features = () => (
       </CardFeature>
 
       <CardFeature
+        id="progress"
         header="See your progress"
         className="mb-12 items-center lg:items-stretch"
       >
@@ -125,6 +129,7 @@ const Features = () => (
       </CardFeature>
 
       <CardFeature
+        id="privacy"
         header="Security and data privacy"
         className="mb-12 items-center lg:items-stretch"
         isReverse
@@ -133,7 +138,11 @@ const Features = () => (
           Vislit is secure and private by design. The entire source code used to
           create Vislit is freely available for review, scrutiny, and
           improvement on{" "}
-          <a className="underline" href="https://github.com/ste163/vislit">
+          <a
+            className="underline"
+            href="https://github.com/ste163/vislit"
+            target={"_blank"} rel="noreferrer"
+          >
             Github
           </a>
           .
@@ -159,7 +168,7 @@ const Features = () => (
       </CardFeature>
 
       <Card className={"mb-12 flex flex-col lg:flex-row"}>
-        <div className="max-w-sm mr-0 lg:mr-4">
+        <div id="roadmap" className="max-w-sm mr-0 lg:mr-4">
           <h2>Roadmap</h2>
           <p>
             After version 1.0 release, roadmap could readjust based on user
@@ -171,6 +180,7 @@ const Features = () => (
             <a
               className="underline"
               href="https://github.com/ste163/vislit/projects"
+              target={"_blank"} rel="noreferrer"
             >
               Github Project page
             </a>
@@ -183,6 +193,7 @@ const Features = () => (
             <a
               className="underline"
               href="https://github.com/ste163/vislit/discussions"
+              target={"_blank"} rel="noreferrer"
             >
               Discussion section on Github
             </a>

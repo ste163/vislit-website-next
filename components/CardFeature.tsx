@@ -3,13 +3,15 @@ import Image from "next/image";
 import Card from "./Card";
 
 const CardFeature: React.FC<{
+  id: string;
   header: string;
   isReverse?: boolean;
   children: ReactNode;
   className?: any;
-}> = ({ header, isReverse = false, children, className }) => {
+}> = ({ id, header, isReverse = false, children, className }) => {
   return (
     <div
+      id={id}
       className={`${className} flex ${
         isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
       } flex-col max-w-5xl max-h-600px`}

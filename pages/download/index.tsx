@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Card from "../../components/Card";
 
 const Download = () => (
@@ -11,7 +12,11 @@ const Download = () => (
         <Card header="Download">
           <p>
             Vislit is currently in development, but will be available soon. See
-            the roadmap (anchor link) for the current trajectory.
+            the{" "}
+            <Link href="/features#roadmap">
+              <a className="underline">roadmap</a>
+            </Link>
+            !
           </p>
         </Card>
       </div>

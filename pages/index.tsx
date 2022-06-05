@@ -20,6 +20,7 @@ const cards = [
     heading: "Distraction-free writing",
     text: `Streamlined for any creative writing document without the bloated extras like "Mail
       Merge"`,
+    link: "/features#writer",
   },
   {
     imageSrc: "/images/home/notes.webp",
@@ -28,6 +29,7 @@ const cards = [
     heading: "Accessible note-taking",
     text: `Anywhere in the application, you can access your notes.
       No swapping between programs to find character references`,
+    link: "/features#writer",
   },
   {
     imageSrc: "/images/home/projects.webp",
@@ -35,6 +37,7 @@ const cards = [
     heading: "Clean project management",
     text: `View summary and list information on all of your projects,
       organized by in-progress, completed, and archived`,
+    link: "/features#projects",
   },
   {
     imageSrc: "/images/home/progress.webp",
@@ -42,6 +45,7 @@ const cards = [
     heading: "Robust tracking for goals, progress, & visualizations",
     text: `The hardest part about writing is keeping at it.
       Easily set and modify goals and visualize your progress`,
+    link: "/features#goals",
   },
 ];
 
@@ -173,15 +177,17 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
         </p>
 
         <div className="flex-col flex lg:grid gap-10 grid-cols-2">
-          {cards.map(({ imageSrc, altText, heading, text }, index) => (
-            <div key={index} className="my-5 md:my-0">
-              <ImageTextOverlay
-                imageSrc={imageSrc}
-                altText={altText}
-                heading={heading}
-                text={text}
-              />
-            </div>
+          {cards.map(({ imageSrc, altText, heading, text, link }, index) => (
+            <Link key={index} href={link}>
+              <div className="my-5 md:my-0">
+                <ImageTextOverlay
+                  imageSrc={imageSrc}
+                  altText={altText}
+                  heading={heading}
+                  text={text}
+                />
+              </div>
+            </Link>
           ))}
         </div>
       </section>

@@ -15,6 +15,7 @@ const About = () => (
             <a
               className="underline"
               href="https://www.gnu.org/licenses/agpl-3.0.en.html"
+              target={"_blank"} rel="noreferrer"
             >
               AGPL-3 license
             </a>
@@ -25,6 +26,7 @@ const About = () => (
             <a
               className="underline"
               href="https://www.gnu.org/licenses/agpl-3.0.en.html"
+              target={"_blank"} rel="noreferrer"
             >
               AGPL-3 license
             </a>{" "}
@@ -39,25 +41,54 @@ const About = () => (
 
         <Card header="Questions or found a bug?" className="my-8">
           <p>
-            Github issues and discussions are the primary area for directing all
-            bug reports and questions. It requires a free account to create. If
-            enough similar questions come up, a FAQ page will be added to this
-            website.
+            Github{" "}
+            <a
+              className="underline"
+              href="https://github.com/ste163/vislit/issues"
+              target={"_blank"} rel="noreferrer"
+            >
+              issues
+            </a>{" "}
+            and{" "}
+            <a
+              className="underline"
+              href="https://github.com/ste163/vislit/discussions"
+              target={"_blank"} rel="noreferrer"
+            >
+              discussions
+            </a>{" "}
+            are the primary area for directing all bug reports and questions.
           </p>
         </Card>
 
         <Card header="Special thanks">
           <p>
             Vislit would not be possible without the wealth of amazing open
-            source projects, a few used in Vislit: Electron, Vue, Vite, Node,
-            TypeScript, Lowdb.
+            source projects available like: Electron, Vue, Vite, Node,
+            TypeScript, and Lowdb.
           </p>
           <p className="my-8">
-            The base project was scaffolded uses catawa93's fantastic
-            vite-electron-builder, but has since been modified to suite Vislit's
-            needs.
+            The base project was scaffolded using{" "}
+            <a
+              className="underline"
+              href="https://github.com/cawa-93"
+              target={"_blank"} rel="noreferrer"
+            >
+              {" "}
+              cawa-93's
+            </a>{" "}
+            fantastic
+            <a
+              className="underline"
+              href="https://github.com/cawa-93/vite-electron-builder"
+              target={"_blank"} rel="noreferrer"
+            >
+              {" "}
+              vite-electron-builder
+            </a>
+            , but has since been modified to suite Vislit's needs.
           </p>
-          <p>Shannon Swenton for logo design</p>
+          <p>Shannon Swenton for logo design.</p>
         </Card>
       </div>
     </div>

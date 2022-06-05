@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
         setIsMobile(true);
       }
     }
-  }, [windowWidth]);
+  }, [windowWidth, isHamburgerOpen]);
 
   // close hamburger on route change
   useEffect(() => {
@@ -78,12 +78,17 @@ const Layout = ({ children }) => {
             <a
               className="underline"
               href="https://www.gnu.org/licenses/agpl-3.0.en.html"
+              target={"_blank"} rel="noreferrer"
             >
               AGPL-3 license
             </a>
             . The entire source code for this website and the application is
             available on{" "}
-            <a className="underline" href="https://github.com/ste163/vislit">
+            <a
+              className="underline"
+              href="https://github.com/ste163/vislit"
+              target={"_blank"} rel="noreferrer"
+            >
               Github
             </a>
             .
