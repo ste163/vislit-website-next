@@ -97,13 +97,13 @@ const Layout = ({ children }) => {
           </p>
         </div>
 
-        <ul className="font-bold mx-8 md:mt-0 mt-4">
+        <ul className="font-bold mx-8 md:mt-0 mt-4 text-lg">
           <li>
             <Link href="/">
               <a>Home</a>
             </Link>
           </li>
-          <li>
+          <li className="py-2">
             <Link href="/features">
               <a>Features</a>
             </Link>
@@ -113,7 +113,7 @@ const Layout = ({ children }) => {
               <a>News</a>
             </Link>
           </li>
-          <li>
+          <li className="py-2">
             <Link href="/about">
               <a>About</a>
             </Link>

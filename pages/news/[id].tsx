@@ -18,12 +18,21 @@ export const getStaticProps = ({ params: { id } }) => {
 };
 
 const NewsArticle: React.FC<{ article: Article }> = ({
-  article: { title, image, altText, headline, date, contentHtml },
+  article: {
+    metaDescription,
+    title,
+    image,
+    altText,
+    headline,
+    date,
+    contentHtml,
+  },
 }) => {
   return (
     <>
       <Head>
         <title>{title} | Vislit</title>
+        <meta name="description" content={metaDescription} />
       </Head>
 
       <div className="flex flex-col place-items-center">

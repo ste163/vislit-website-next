@@ -7,6 +7,7 @@ import html from "remark-html";
 export interface Article {
   id: string;
   slug: string;
+  metaDescription: string;
   title: string;
   headline: string;
   image: string;
@@ -45,7 +46,7 @@ export const getArticles = (count?: number): Article[] => {
     const fileData = readFileSync(fullPath, "utf8");
     // parse metadata
     const {
-      data: { slug, title, headline, image, altText, date },
+      data: { slug, metaDescription, title, headline, image, altText, date },
       content,
     } = matter(fileData);
     // convert markdown to html
@@ -53,6 +54,7 @@ export const getArticles = (count?: number): Article[] => {
     return {
       id,
       slug,
+      metaDescription,
       title,
       headline,
       image,
@@ -81,13 +83,14 @@ export const getArticleById = (id: string): Article => {
   const fullPath = join(articlesDirectory, `${id}.md`);
   const fileData = readFileSync(fullPath, "utf8");
   const {
-    data: { slug, title, headline, image, altText, date },
+    data: { slug, metaDescription, title, headline, image, altText, date },
     content,
   } = matter(fileData);
   const processedContent = remark().use(html).processSync(content).toString();
 
   return {
     id,
+    metaDescription,
     slug,
     title,
     headline,

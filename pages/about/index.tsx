@@ -5,6 +5,10 @@ const About = () => (
   <>
     <Head>
       <title>About | Vislit </title>
+      <meta
+        name="description"
+        content="Vislit is free and open source software licensed user the AGPL-3 license and is developed with the Electron framework."
+      />
     </Head>
 
     <div className="flex flex-col items-center">
@@ -15,7 +19,8 @@ const About = () => (
             <a
               className="underline"
               href="https://www.gnu.org/licenses/agpl-3.0.en.html"
-              target={"_blank"} rel="noreferrer"
+              target={"_blank"}
+              rel="noreferrer"
             >
               AGPL-3 license
             </a>
@@ -26,7 +31,8 @@ const About = () => (
             <a
               className="underline"
               href="https://www.gnu.org/licenses/agpl-3.0.en.html"
-              target={"_blank"} rel="noreferrer"
+              target={"_blank"}
+              rel="noreferrer"
             >
               AGPL-3 license
             </a>{" "}
@@ -45,7 +51,8 @@ const About = () => (
             <a
               className="underline"
               href="https://github.com/ste163/vislit/issues"
-              target={"_blank"} rel="noreferrer"
+              target={"_blank"}
+              rel="noreferrer"
             >
               issues
             </a>{" "}
@@ -53,7 +60,8 @@ const About = () => (
             <a
               className="underline"
               href="https://github.com/ste163/vislit/discussions"
-              target={"_blank"} rel="noreferrer"
+              target={"_blank"}
+              rel="noreferrer"
             >
               discussions
             </a>{" "}
@@ -72,7 +80,8 @@ const About = () => (
             <a
               className="underline"
               href="https://github.com/cawa-93"
-              target={"_blank"} rel="noreferrer"
+              target={"_blank"}
+              rel="noreferrer"
             >
               {" "}
               cawa-93's
@@ -81,7 +90,8 @@ const About = () => (
             <a
               className="underline"
               href="https://github.com/cawa-93/vite-electron-builder"
-              target={"_blank"} rel="noreferrer"
+              target={"_blank"}
+              rel="noreferrer"
             >
               {" "}
               vite-electron-builder

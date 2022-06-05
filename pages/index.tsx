@@ -54,6 +54,10 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
     <div className="flex flex-col">
       <Head>
         <title>Vislit</title>
+        <meta
+          name="description"
+          content="Vislit is free and open source desktop creative writing software. It allows writers to manage multiple writing projects, take notes, and set and track goals"
+        />
       </Head>
 
       <section className="flex flex-col lg:flex-row self-center w-full 2xl:w-10/12">
@@ -85,7 +89,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
               </Link>
               <Link href="/features">
                 <a className="text-2xl font-bold text-center mt-2">
-                  Learn more
+                  all features
                 </a>
               </Link>
             </div>
@@ -123,7 +127,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
                 <span className="text-sm">{articles[0].date}</span>
               </div>
               <Link href={`/news/${articles[0].id}`}>
-                <a className="font-bold text-right">Read more</a>
+                <a className="font-bold text-right">Read this article</a>
               </Link>
             </div>
           </div>

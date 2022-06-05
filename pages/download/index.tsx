@@ -6,6 +6,10 @@ const Download = () => (
   <>
     <Head>
       <title>Download | Vislit </title>
+      <meta
+        name="description"
+        content="Download Vislit or checkout the development roadmap"
+      />
     </Head>
     <div className="flex flex-col items-center">
       <div className="max-w-2xl">

@@ -15,6 +15,10 @@ const News: React.FC<{ articles: Article[] }> = ({ articles }) => (
   <>
     <Head>
       <title>News | Vislit </title>
+      <meta
+        name="description"
+        content="Latest news articles and development about Vislit."
+      />
     </Head>
 
     <h1 className="text-center">Latest news</h1>

@@ -9,6 +9,10 @@ const Features = () => (
   <>
     <Head>
       <title>Features | Vislit </title>
+      <meta
+        name="description"
+        content="Vislit's core features are its project management, stream-lined writing editor, built-in note-taker, and the ability to set and track writing goals."
+      />
     </Head>
 
     <div className="flex flex-col items-center">

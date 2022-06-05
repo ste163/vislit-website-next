@@ -27,12 +27,14 @@ const NavigationBar: React.FC<{
             >
               <div className="flex justify-between w-full">
                 <Link href="/">
-                  <a className="cursor-pointer self-start">
+                  <a aria-label="home" className="cursor-pointer self-start">
                     <Logo />
                   </a>
                 </Link>
 
                 <button
+                  aria-label="menu"
+                  role={"button"}
                   className={`${isMobile ? "hamburger-container" : "hidden"}`}
                   onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}
                 >
