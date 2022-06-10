@@ -27,7 +27,11 @@ const NavigationBar: React.FC<{
             >
               <div className="flex justify-between w-full">
                 <Link href="/">
-                  <a aria-label="home" className="cursor-pointer self-start">
+                  <a
+                    aria-label="home"
+                    className="cursor-pointer self-start"
+                    onClick={() => setIsHamburgerOpen(false)}
+                  >
                     <Logo />
                   </a>
                 </Link>
@@ -67,7 +71,7 @@ const NavigationBar: React.FC<{
                       }`}
                     >
                       <Link href="/">
-                        <a>HOME</a>
+                        <a onClick={() => setIsHamburgerOpen(false)}>HOME</a>
                       </Link>
                     </li>
                   )}
@@ -78,7 +82,7 @@ const NavigationBar: React.FC<{
                     } ${isMobile ? "my-2" : "mx-4"}`}
                   >
                     <Link href="/features">
-                      <a>FEATURES</a>
+                      <a onClick={() => setIsHamburgerOpen(false)}>FEATURES</a>
                     </Link>
                   </li>
 
@@ -88,7 +92,7 @@ const NavigationBar: React.FC<{
                     } ${isMobile ? "my-2" : "mx-4"}`}
                   >
                     <Link href="/news">
-                      <a>NEWS</a>
+                      <a onClick={() => setIsHamburgerOpen(false)}>NEWS</a>
                     </Link>
                   </li>
 
@@ -98,7 +102,7 @@ const NavigationBar: React.FC<{
                     } ${isMobile ? "my-2" : "mx-4"}`}
                   >
                     <Link href="/about">
-                      <a>ABOUT</a>
+                      <a onClick={() => setIsHamburgerOpen(false)}>ABOUT</a>
                     </Link>
                   </li>
 
@@ -108,7 +112,7 @@ const NavigationBar: React.FC<{
                     } ${isMobile ? "my-2" : "mx-4"}`}
                   >
                     <Link href="/download">
-                      <a>DOWNLOAD</a>
+                      <a onClick={() => setIsHamburgerOpen(false)}>DOWNLOAD</a>
                     </Link>
                   </li>
                 </ul>

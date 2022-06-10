@@ -48,11 +48,6 @@ const Layout = ({ children }) => {
     }
   }, [windowWidth, isHamburgerOpen]);
 
-  // close hamburger on route change
-  useEffect(() => {
-    setIsHamburgerOpen(false);
-  }, [pathname]);
-
   return (
     <div
       className={`h-full flex flex-col ${isHamburgerOpen && "overflow-hidden"}`}
