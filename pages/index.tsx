@@ -28,7 +28,7 @@ const cards = [
       "Close-up of notes section open while on the writing editor is open",
     heading: "Accessible note-taking",
     text: `Anywhere in the application, you can access your notes.
-      No more swapping between programs and losing your flow`,
+      No more swapping between applications and losing your flow`,
     link: "/features#writer",
   },
   {
@@ -42,7 +42,7 @@ const cards = [
   {
     imageSrc: "/images/home/progress.webp",
     altText: "Dashboard with graphs of writing progress",
-    heading: "Robust tracking for goals, progress, & visualizations",
+    heading: "Robust tracking for goals, progress, & data visualizations",
     text: `The hardest part about writing is keeping at it.
       Easily set and modify goals and visualize your progress`,
     link: "/features#goals",
@@ -66,7 +66,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
           <h2 className="mt-12 mb-6">the app for writers</h2>
           <p className="text-lg max-w-lg mb-6">
             Write and manage short stories, novels, poems, or any writing
-            project. Keep your notes, goals, and documents cleanly organized and
+            project. Keep your notes, goals, and documents organized and
             accessible.
           </p>
 

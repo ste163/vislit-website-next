@@ -54,11 +54,11 @@ const Features = () => (
             <li>
               <strong>Track progress</strong> for any amount of days of the
               month. Log your work whether that's writing 2,000 words or
-              proofreading 5,000.
+              proofreading 20 pages.
             </li>
             <li>
               <strong>Visualize</strong> your progress in a dashboard and
-              receive suggestions on how you can improve on your goals.
+              receive suggestions on how you can improve.
             </li>
           </ul>
         </div>
@@ -105,8 +105,8 @@ const Features = () => (
       >
         <p className="mb-8">
           The best way to finish anything is by setting a goal. That's why
-          Vislit allows for easy goal setting. If you set an ambitious goal of
-          writing 1000 words every day (about four or five pages), but find
+          Vislit allows for easy goal management. If you set an ambitious goal
+          of writing 1000 words every day (about four or five pages), but find
           that's too much, modify your goal. Vislit will keep a log of every
           change you make to your goals.
         </p>
@@ -153,7 +153,7 @@ const Features = () => (
         </p>
 
         <p className="my-8">
-          If you try Vislit out but decide it isn't for you, no worries! Vislit
+          If you try Vislit, but decide it isn't for you, no worries! Vislit
           saves your documents and notes as HTML files that can be imported into
           any other writing editor. Its database is stored in JSON, another
           standard and highly transferrable data format.
@@ -167,7 +167,7 @@ const Features = () => (
         <p>
           If you'd like to use Vislit on multiple computers or with the cloud,
           set Vislit to save its database in Google Drive, Dropbox, OneDrive, or
-          any other cloud syncing service.
+          any cloud syncing service.
         </p>
       </CardFeature>
 

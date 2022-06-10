@@ -27,10 +27,7 @@ const CardFeature: React.FC<{
         />
       </div>
 
-      <Card
-        header={header}
-        className="w-4/5 lg:w-1/2 rounded-none rounded-r-md"
-      >
+      <Card header={header} className="w-4/5 lg:w-1/2 rounded-none">
         {children}
       </Card>
     </div>
