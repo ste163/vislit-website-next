@@ -39,8 +39,8 @@ const About = () => (
           </p>
           <p>
             Vislit is developed using the Electron framework, also used by
-            Slack, Discord, and Facebook. This allows for easy cross-platform
-            development with a consistent user experience.
+            Slack, Discord, Microsoft, and Facebook. This allows for easy
+            cross-platform development with a consistent user experience.
           </p>
         </Card>
 

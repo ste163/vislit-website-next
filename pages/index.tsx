@@ -120,7 +120,7 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
                 alt={articles[0].altText}
               />
             </div>
-            <div className="flex flex-col justify-between ml-3">
+            <div className="flex flex-col justify-between ml-3 max-w-sm">
               <div className="flex flex-col">
                 <h3>{articles[0].title}</h3>
                 <p className="my-4">{articles[0].headline}</p>

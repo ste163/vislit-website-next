@@ -6,10 +6,19 @@ const CardFeature: React.FC<{
   id: string;
   header: string;
   imageSrc: string;
+  imageAlt: string;
   isReverse?: boolean;
   children: ReactNode;
   className?: any;
-}> = ({ id, header, imageSrc, isReverse = false, children, className }) => {
+}> = ({
+  id,
+  header,
+  imageSrc,
+  imageAlt,
+  isReverse = false,
+  children,
+  className,
+}) => {
   return (
     <div
       id={id}
@@ -24,7 +33,7 @@ const CardFeature: React.FC<{
           width="100%"
           layout="responsive"
           objectFit="cover"
-          alt={"something"}
+          alt={imageAlt}
         />
       </div>
 

@@ -22,7 +22,7 @@ const CardNews: React.FC<{ article: Article; className?: any }> = ({
         />
       </div>
 
-      <Card header={article.title} className="rounded-r-md">
+      <Card header={article.title} className="rounded-r-md w-2/3">
         <div>
           <span>{article.date}</span>
         </div>

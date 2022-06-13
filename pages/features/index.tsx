@@ -46,9 +46,9 @@ const Features = () => (
               while viewing your progress dashboard.
             </li>
             <li>
-              <strong>Goal-setting</strong> to count all of your work. Set word
-              count goals for how much you'd like to write along with whether
-              proofreading, editing, or revising also counts towards goal
+              <strong>Goal-setting</strong> to define your work. Set word count
+              goals for how much you'd like to write along with whether
+              proofreading, editing, or revising is included towards goal
               completion.
             </li>
             <li>
@@ -68,6 +68,7 @@ const Features = () => (
         id="projects"
         header="Projects at the core"
         imageSrc="/images/home/projects.webp"
+        imageAlt="List of writing projects and a project summary card"
         className="mb-12 items-center lg:items-stretch"
         isReverse
       >
@@ -84,6 +85,7 @@ const Features = () => (
         id="writer"
         header="Minimalist writing and note taking"
         imageSrc="/images/home/notes.webp"
+        imageAlt="A note is open next to the writing editor"
         className="mb-12 items-center lg:items-stretch"
       >
         <p className="mb-8">
@@ -103,6 +105,7 @@ const Features = () => (
         id="goals"
         header="Set your writing goals"
         imageSrc="/images/home/goals.webp"
+        imageAlt="Table showing current goal and all previous goals"
         className="mb-12 items-center lg:items-stretch"
         isReverse
       >
@@ -111,12 +114,12 @@ const Features = () => (
           Vislit allows for easy goal management. If you set an ambitious goal
           of writing 1000 words every day (about four or five pages), but find
           that's too much, modify your goal. Vislit will keep a log of every
-          change you make to your goals.
+          change you make.
         </p>
         <p>
           Maybe you didn't write 1000 words every day, but you spent an hour
           proofreading, editing, or revising. That's great, too! Those can count
-          towards goal completion so you track all of your hard work!
+          towards goal completion. Keep track of all of your hard work!
         </p>
       </CardFeature>
 
@@ -124,6 +127,7 @@ const Features = () => (
         id="progress"
         header="See your progress"
         imageSrc="/images/home/progress.webp"
+        imageAlt="Dashboard with graphs of writing progress"
         className="mb-12 items-center lg:items-stretch"
       >
         <p>
@@ -139,6 +143,7 @@ const Features = () => (
         id="privacy"
         header="Security and data privacy"
         imageSrc="/images/home/writer.webp"
+        imageAlt="Writing editor"
         className="mb-12 items-center lg:items-stretch"
         isReverse
       >
