@@ -38,9 +38,18 @@ const About = () => (
             , too, so that Vislit stays free forever.
           </p>
           <p>
-            Vislit is developed using the Electron framework, also used by
-            Slack, Discord, Microsoft, and Facebook. This allows for easy
-            cross-platform development with a consistent user experience.
+            Vislit is developed using the{" "}
+            <a
+              className="underline"
+              href="https://www.electronjs.org/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              Electron
+            </a>{" "}
+            framework, also used by Slack, Discord, Microsoft, and Facebook.
+            This allows for easy cross-platform development with a consistent
+            user experience.
           </p>
         </Card>
 
@@ -71,8 +80,8 @@ const About = () => (
         <Card header="Special thanks">
           <p>
             Vislit would not be possible without the wealth of amazing open
-            source projects available like: Electron, Vue, Vite, Node,
-            TypeScript, and Lowdb.
+            source projects available like: Electron, Vue, Vite, TypeScript, and
+            Lowdb.
           </p>
           <p className="my-8">
             The base project was scaffolded using{" "}
@@ -97,7 +106,17 @@ const About = () => (
             </a>
             , but has since been modified to suit Vislit's needs.
           </p>
-          <p>Shannon Swenton for logo design.</p>
+          <p>
+            <a
+              className="underline"
+              href="https://www.linkedin.com/in/shannon-swenton/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              Shannon Swenton
+            </a>{" "}
+            for logo design.
+          </p>
         </Card>
       </div>
     </div>
