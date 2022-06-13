@@ -67,6 +67,7 @@ const Features = () => (
       <CardFeature
         id="projects"
         header="Projects at the core"
+        imageSrc="/images/home/projects.webp"
         className="mb-12 items-center lg:items-stretch"
         isReverse
       >
@@ -82,6 +83,7 @@ const Features = () => (
       <CardFeature
         id="writer"
         header="Minimalist writing and note taking"
+        imageSrc="/images/home/notes.webp"
         className="mb-12 items-center lg:items-stretch"
       >
         <p className="mb-8">
@@ -100,6 +102,7 @@ const Features = () => (
       <CardFeature
         id="goals"
         header="Set your writing goals"
+        imageSrc="/images/home/goals.webp"
         className="mb-12 items-center lg:items-stretch"
         isReverse
       >
@@ -120,6 +123,7 @@ const Features = () => (
       <CardFeature
         id="progress"
         header="See your progress"
+        imageSrc="/images/home/progress.webp"
         className="mb-12 items-center lg:items-stretch"
       >
         <p>
@@ -134,6 +138,7 @@ const Features = () => (
       <CardFeature
         id="privacy"
         header="Security and data privacy"
+        imageSrc="/images/home/writer.webp"
         className="mb-12 items-center lg:items-stretch"
         isReverse
       >

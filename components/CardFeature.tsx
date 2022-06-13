@@ -5,10 +5,11 @@ import Card from "./Card";
 const CardFeature: React.FC<{
   id: string;
   header: string;
+  imageSrc: string;
   isReverse?: boolean;
   children: ReactNode;
   className?: any;
-}> = ({ id, header, isReverse = false, children, className }) => {
+}> = ({ id, header, imageSrc, isReverse = false, children, className }) => {
   return (
     <div
       id={id}
@@ -18,7 +19,7 @@ const CardFeature: React.FC<{
     >
       <div className="relative w-4/5 lg:w-1/2">
         <Image
-          src={"/images/home/writer.webp"}
+          src={imageSrc}
           height="100%"
           width="100%"
           layout="responsive"
