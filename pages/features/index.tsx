@@ -53,7 +53,7 @@ const Features = () => (
             </li>
             <li>
               <strong>Track progress</strong> for any amount of days of the
-              month. Log your work whether that's writing 2,000 words or
+              month. Log your work: whether that's writing 2,000 words or
               proofreading 20 pages.
             </li>
             <li>
@@ -117,9 +117,9 @@ const Features = () => (
           change.
         </p>
         <p>
-          Maybe you didn't write 1000 words every day, but you spent an hour
-          proofreading, editing, or revising. That's great, too! That work can
-          optionally count towards goal completion.
+          Maybe you didn't write 1000 words, but you spent an hour proofreading,
+          editing, or revising. That's great, too! That work can optionally
+          count towards goal completion.
         </p>
       </CardFeature>
 
@@ -130,12 +130,15 @@ const Features = () => (
         imageAlt="Dashboard with graphs of writing progress"
         className="mb-12 items-center lg:items-stretch"
       >
-        <p>
+        <p className="mb-8">
           Not only will you have more pages, but as you enter your progress,
           your visualization dashboard will develop, giving you insight into how
-          you write and the best times you write. Make changes to increase your
-          goals or relax them if it's too much. Vislit suggests modifications to
-          your goals if you consistently exceed or miss them.
+          you write and the best times you write.
+        </p>
+        <p>
+          Make changes to increase your goals or relax them if it's too much.
+          Vislit suggests modifications to your goals if you consistently exceed
+          or miss them.
         </p>
       </CardFeature>
 
