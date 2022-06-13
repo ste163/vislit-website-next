@@ -1,9 +1,8 @@
 ---
-slug: "progress-update-may-2022"
 metaDescription: "May 2022 update: backend functionality is finished. Work starting on implemented the user interface."
 title: "Progress Update: May 2022"
 headline: "The backend is complete and the interface work begins"
-image: /images/articles/2022-05-01-progress-update.webp
+image: /images/articles/progress-update-may-2022.webp
 altText: "All 34 test files failing on Windows"
 date: "2022-05-01"
 ---

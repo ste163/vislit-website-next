@@ -1,9 +1,8 @@
 ---
-slug: "new-website"
 metaDescription: "Vislit's website has been completely re-designed and re-written using Next!"
 title: "Welcome to the new website!"
 headline: "Revamped using Next 12"
-image: /images/articles/2022-04-23-welcome.webp
+image: /images/articles/new-website.webp
 altText: "Old Vislit website from 2021"
 date: "2022-04-23"
 ---
