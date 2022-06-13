@@ -4,10 +4,7 @@ import "../styles/globals.css";
 
 function App({ Component, pageProps }) {
   return (
-    <PlausibleProvider
-      domain="vislit-website.vercel.app"
-      trackOutboundLinks={true}
-    >
+    <PlausibleProvider domain="vislit.app" trackOutboundLinks={true}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
