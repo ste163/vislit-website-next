@@ -6,7 +6,6 @@ import html from "remark-html";
 
 export interface Article {
   id: string;
-  slug: string;
   metaDescription: string;
   title: string;
   headline: string;
@@ -17,19 +16,6 @@ export interface Article {
 }
 
 const articlesDirectory = join(process.cwd(), "_articles");
-
-/**
- * Get all ids for fetching per article by id route
- * @returns array of {params: id}
- */
-export const getAllArticleIds = () =>
-  readdirSync(articlesDirectory).map((fileName) => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, ""),
-      },
-    };
-  });
 
 /**
  * Returns articles sorted by most recent.
@@ -46,14 +32,13 @@ export const getArticles = (count?: number): Article[] => {
     const fileData = readFileSync(fullPath, "utf8");
     // parse metadata
     const {
-      data: { slug, metaDescription, title, headline, image, altText, date },
+      data: { metaDescription, title, headline, image, altText, date },
       content,
     } = matter(fileData);
     // convert markdown to html
     const processedContent = remark().use(html).processSync(content).toString();
     return {
       id,
-      slug,
       metaDescription,
       title,
       headline,
@@ -76,6 +61,19 @@ export const getArticles = (count?: number): Article[] => {
 };
 
 /**
+ * Get all ids for fetching per article by id route
+ * @returns array of {params: id}
+ */
+export const getAllArticleIds = () =>
+  readdirSync(articlesDirectory).map((fileName) => {
+    return {
+      params: {
+        id: fileName.replace(/\.md$/, ""),
+      },
+    };
+  });
+
+/**
  * Return single article by id
  * @param id string
  */
@@ -83,7 +81,7 @@ export const getArticleById = (id: string): Article => {
   const fullPath = join(articlesDirectory, `${id}.md`);
   const fileData = readFileSync(fullPath, "utf8");
   const {
-    data: { slug, metaDescription, title, headline, image, altText, date },
+    data: { metaDescription, title, headline, image, altText, date },
     content,
   } = matter(fileData);
   const processedContent = remark().use(html).processSync(content).toString();
@@ -91,7 +89,6 @@ export const getArticleById = (id: string): Article => {
   return {
     id,
     metaDescription,
-    slug,
     title,
     headline,
     image,
