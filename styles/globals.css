@@ -16,7 +16,7 @@
   }
 
   h3 {
-    @apply font-bold text-base md:text-xl;
+    @apply font-bold text-xl;
   }
 }
 
@@ -42,6 +42,10 @@
 }
 
 /* timeline */
+.timeline-header {
+  @apply text-base md:text-xl;
+}
+
 .timeline-bullet {
   margin-bottom: 1em;
 }
