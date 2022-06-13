@@ -177,7 +177,7 @@ const Features = () => (
       </CardFeature>
 
       <Card className={"mb-12 flex flex-col lg:flex-row"}>
-        <div id="roadmap" className="max-w-sm mr-0 lg:mr-4">
+        <div id="roadmap" className="max-w-xs mr-0 lg:mr-12">
           <h2>Roadmap</h2>
           <p>
             After version 1.0 release, roadmap could readjust based on user
@@ -214,7 +214,7 @@ const Features = () => (
 
         <ul className="mt-8 lg:mt-0 min-w-max">
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-36 text-right">2021</h3>
+            <h3 className="w-24 text-right">2021</h3>
             <div className="bg-primary border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center">
               <div className="pt-[3px] pl-[1px] scale-75">
                 <IconCheckmark />
@@ -224,31 +224,31 @@ const Features = () => (
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-36 text-right">mid-2022</h3>
+            <h3 className="w-24 text-right">mid-2022</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Implement final designs</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-36 text-right">late-2022</h3>
+            <h3 className="w-24 text-right">late-2022</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Test release(s)</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-36 text-right">early-2023</h3>
+            <h3 className="w-24 text-right">early-2023</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>1.0 release</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="w-36 text-right">2023+</h3>
+            <h3 className="w-24 text-right">2023+</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Thesaurus integration</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <div className="w-36 text-right"></div>
+            <div className="w-24 text-right"></div>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Note-canvas, project stages</div>
           </li>
