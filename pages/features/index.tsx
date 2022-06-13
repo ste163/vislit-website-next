@@ -91,8 +91,8 @@ const Features = () => (
         <p className="mb-8">
           Most features in well-known writing software like Word and Google Docs
           are geared for office work or live collaboration. Vislit includes only
-          what's necessary for efficient creative writing, making the interface
-          uncluttered, simple, and fast.
+          what's necessary for efficient, solo creative writing, making the
+          interface uncluttered, simple, and fast.
         </p>
         <p>
           By integrating note-taking, you no longer need to manage files or jump
@@ -114,12 +114,12 @@ const Features = () => (
           Vislit allows for easy goal management. If you set an ambitious goal
           of writing 1000 words every day (about four or five pages), but find
           that's too much, modify your goal. Vislit will keep a log of every
-          change you make.
+          change.
         </p>
         <p>
           Maybe you didn't write 1000 words every day, but you spent an hour
-          proofreading, editing, or revising. That's great, too! Those can count
-          towards goal completion. Keep track of all of your hard work!
+          proofreading, editing, or revising. That's great, too! That work can
+          optionally count towards goal completion.
         </p>
       </CardFeature>
 
