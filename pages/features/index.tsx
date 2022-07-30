@@ -221,6 +221,7 @@ const Features = () => (
         </div>
 
         <ul className="mt-8 lg:mt-0 min-w-max">
+          {/* TODO: move these to an object that we map over */}
           <li className="timeline-bullet flex items-center relative">
             <h3 className="timeline-header w-24 text-right">2021</h3>
             <div className="bg-primary border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center">
@@ -244,7 +245,9 @@ const Features = () => (
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="timeline-header w-24 text-right">early-2023</h3>
+            <h3 className="timeline-header w-24 text-right whitespace-nowrap">
+              early-2023
+            </h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>1.0 release</div>
           </li>
