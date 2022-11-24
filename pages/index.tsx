@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { Article, getArticles } from "../api";
 import ImageTextOverlay from "../components/ImageTextOverlay";
@@ -78,19 +78,21 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
             </p>
 
             <div className="w-1/2 flex flex-col items-center">
-              <Link href="/download">
-                <a className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer">
-                  <span className="text-2xl font-bold">Download</span>
-                  <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
-                    TBD
-                  </div>
-                  <span>Linux, Mac, Windows</span>
-                </a>
+              <Link
+                href="/download"
+                className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer"
+              >
+                <span className="text-2xl font-bold">Download</span>
+                <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
+                  TBD
+                </div>
+                <span>Linux, Mac, Windows</span>
               </Link>
-              <Link href="/features">
-                <a className="text-2xl font-bold text-center mt-2">
-                  all features
-                </a>
+              <Link
+                href="/features"
+                className="text-2xl font-bold text-center mt-2"
+              >
+                all features
               </Link>
             </div>
           </div>
@@ -126,8 +128,11 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
                 <p className="my-4">{articles[0].headline}</p>
                 <span className="text-sm">{articles[0].date}</span>
               </div>
-              <Link href={`/news/${articles[0].id}`}>
-                <a className="font-bold text-right">Read this article</a>
+              <Link
+                href={`/news/${articles[0].id}`}
+                className="font-bold text-right"
+              >
+                Read this article
               </Link>
             </div>
           </div>
@@ -152,18 +157,14 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
                       key={id}
                       className="underline cursor-pointer text-md font-bold"
                     >
-                      <Link href={`/news/${id}`}>
-                        <a>{title}</a>
-                      </Link>
+                      <Link href={`/news/${id}`}>{title}</Link>
                     </li>
                   )
                 )}
               </ul>
             </div>
             <div className="self-center cursor-pointer bg-primary py-2 px-3 font-bold rounded-sm mt-8 md:mt-0">
-              <Link href={`/news`}>
-                <a>all news</a>
-              </Link>
+              <Link href={`/news`}>all news</Link>
             </div>
           </div>
         </div>
@@ -178,15 +179,13 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
 
         <div className="flex-col flex lg:grid gap-10 grid-cols-2">
           {cards.map(({ imageSrc, altText, heading, text, link }, index) => (
-            <Link key={index} href={link}>
-              <a className="my-5 md:my-0">
-                <ImageTextOverlay
-                  imageSrc={imageSrc}
-                  altText={altText}
-                  heading={heading}
-                  text={text}
-                />
-              </a>
+            <Link key={index} href={link} className="my-5 md:my-0">
+              <ImageTextOverlay
+                imageSrc={imageSrc}
+                altText={altText}
+                heading={heading}
+                text={text}
+              />
             </Link>
           ))}
         </div>

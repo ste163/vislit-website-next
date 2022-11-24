@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const ImageTextOverlay = ({ imageSrc, altText, heading, text }) => (
   <div className="grid max-w-lg">

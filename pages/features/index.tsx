@@ -271,14 +271,15 @@ const Features = () => (
           <h2 className="text-2xl font-bold text-center mb-3">
             Ready to start writing?
           </h2>
-          <Link href="/download">
-            <a className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer">
-              <span className="text-2xl font-bold">Download</span>
-              <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
-                TBD
-              </div>
-              <span>Linux, Mac, Windows</span>
-            </a>
+          <Link
+            href="/download"
+            className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer"
+          >
+            <span className="text-2xl font-bold">Download</span>
+            <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
+              TBD
+            </div>
+            <span>Linux, Mac, Windows</span>
           </Link>
         </div>
       </div>

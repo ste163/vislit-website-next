@@ -17,8 +17,8 @@ const Download = () => (
           <p>
             Vislit is currently in development, but will be available soon. See
             the{" "}
-            <Link href="/features#roadmap">
-              <a className="underline">roadmap</a>
+            <Link href="/features#roadmap" className="underline">
+              roadmap
             </Link>
             !
           </p>
