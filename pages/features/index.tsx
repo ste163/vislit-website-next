@@ -233,20 +233,20 @@ const Features = () => (
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="timeline-header w-24 text-right">mid-2022</h3>
+            <h3 className="timeline-header w-24 text-right">late-2022</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Implement final designs</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="timeline-header w-24 text-right">late-2022</h3>
+            <h3 className="timeline-header w-24 text-right">early-2023</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Test release(s)</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
             <h3 className="timeline-header w-24 text-right whitespace-nowrap">
-              early-2023
+              mid-2023
             </h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>1.0 release</div>
