@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Article, getAllArticleIds, getArticleById } from "../../api";
 
 export const getStaticPaths = () => {
@@ -36,15 +36,8 @@ const NewsArticle: React.FC<{ article: Article }> = ({
       </Head>
 
       <div className="flex flex-col place-items-center">
-        <figure className="flex flex-col w-fit">
-          <Image
-            src={image}
-            width={600}
-            height={500}
-            layout="intrinsic"
-            objectFit="cover"
-            alt={altText}
-          />
+        <figure className="flex flex-col w-fit h-auto object-cover">
+          <Image src={image} width={600} height={500} alt={altText} priority />
           <figcaption className="text-right italic">{altText}</figcaption>
         </figure>
 

@@ -43,7 +43,7 @@
 
 /* timeline */
 .timeline-header {
-  @apply text-base md:text-xl;
+  @apply text-base md:text-lg;
 }
 
 .timeline-bullet {

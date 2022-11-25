@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { Article, getArticles } from "../api";
 import ImageTextOverlay from "../components/ImageTextOverlay";
@@ -98,12 +98,12 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
           </div>
         </div>
 
-        <div className="relative place-self-center w-full h-[300px] lg:h-[520px]">
+        <div className="relative object-contain place-self-center w-full h-[300px] lg:h-[520px]">
           <Image
             src={"/images/home/hero.webp"}
-            layout="fill"
-            objectFit="contain"
             alt={"Vislit's summary page with note editor open"}
+            fill
+            priority
           />
         </div>
       </section>
@@ -113,12 +113,11 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
 
         <div className="card flex flex-col px-6 py-5 h-full md:flex-row">
           <div className="flex flex-col md:flex-row">
-            <div className="place-self-center mb-2 md:mb-0">
+            <div className="place-self-center object-cover w-auto mb-2 md:mb-0">
               <Image
                 src={articles[0].image}
                 height={175}
                 width={175}
-                objectFit="cover"
                 alt={articles[0].altText}
               />
             </div>
