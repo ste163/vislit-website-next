@@ -233,20 +233,20 @@ const Features = () => (
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="timeline-header w-24 text-right">mid-2022</h3>
+            <h3 className="timeline-header w-24 text-right">late-2022</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Implement final designs</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
-            <h3 className="timeline-header w-24 text-right">late-2022</h3>
+            <h3 className="timeline-header w-24 text-right">early-2023</h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>Test release(s)</div>
           </li>
 
           <li className="timeline-bullet flex items-center relative">
             <h3 className="timeline-header w-24 text-right whitespace-nowrap">
-              early-2023
+              mid-2023
             </h3>
             <div className="border-4 border-primary rounded-full w-8 h-8 mx-4 flex place-content-center"></div>
             <div>1.0 release</div>
@@ -271,14 +271,15 @@ const Features = () => (
           <h2 className="text-2xl font-bold text-center mb-3">
             Ready to start writing?
           </h2>
-          <Link href="/download">
-            <a className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer">
-              <span className="text-2xl font-bold">Download</span>
-              <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
-                TBD
-              </div>
-              <span>Linux, Mac, Windows</span>
-            </a>
+          <Link
+            href="/download"
+            className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer"
+          >
+            <span className="text-2xl font-bold">Download</span>
+            <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
+              TBD
+            </div>
+            <span>Linux, Mac, Windows</span>
           </Link>
         </div>
       </div>

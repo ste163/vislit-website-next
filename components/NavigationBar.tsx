@@ -26,14 +26,13 @@ const NavigationBar: React.FC<{
               }`}
             >
               <div className="flex justify-between w-full">
-                <Link href="/">
-                  <a
-                    aria-label="home"
-                    className="cursor-pointer self-start"
-                    onClick={() => setIsHamburgerOpen(false)}
-                  >
-                    <Logo />
-                  </a>
+                <Link
+                  href="/"
+                  aria-label="home"
+                  className="cursor-pointer self-start"
+                  onClick={() => setIsHamburgerOpen(false)}
+                >
+                  <Logo />
                 </Link>
 
                 <button
@@ -70,8 +69,8 @@ const NavigationBar: React.FC<{
                         asPath === "/" && "active-nav-link"
                       }`}
                     >
-                      <Link href="/">
-                        <a onClick={() => setIsHamburgerOpen(false)}>HOME</a>
+                      <Link href="/" onClick={() => setIsHamburgerOpen(false)}>
+                        HOME
                       </Link>
                     </li>
                   )}
@@ -81,8 +80,11 @@ const NavigationBar: React.FC<{
                       asPath === "/features" && "active-nav-link"
                     } ${isMobile ? "my-2" : "mx-4"}`}
                   >
-                    <Link href="/features">
-                      <a onClick={() => setIsHamburgerOpen(false)}>FEATURES</a>
+                    <Link
+                      href="/features"
+                      onClick={() => setIsHamburgerOpen(false)}
+                    >
+                      FEATURES
                     </Link>
                   </li>
 
@@ -91,8 +93,11 @@ const NavigationBar: React.FC<{
                       asPath === "/news" && "active-nav-link"
                     } ${isMobile ? "my-2" : "mx-4"}`}
                   >
-                    <Link href="/news">
-                      <a onClick={() => setIsHamburgerOpen(false)}>NEWS</a>
+                    <Link
+                      href="/news"
+                      onClick={() => setIsHamburgerOpen(false)}
+                    >
+                      NEWS
                     </Link>
                   </li>
 
@@ -101,8 +106,11 @@ const NavigationBar: React.FC<{
                       asPath === "/about" && "active-nav-link"
                     } ${isMobile ? "my-2" : "mx-4"}`}
                   >
-                    <Link href="/about">
-                      <a onClick={() => setIsHamburgerOpen(false)}>ABOUT</a>
+                    <Link
+                      href="/about"
+                      onClick={() => setIsHamburgerOpen(false)}
+                    >
+                      ABOUT
                     </Link>
                   </li>
 
@@ -111,8 +119,11 @@ const NavigationBar: React.FC<{
                       asPath === "/download" && "active-nav-link"
                     } ${isMobile ? "my-2" : "mx-4"}`}
                   >
-                    <Link href="/download">
-                      <a onClick={() => setIsHamburgerOpen(false)}>DOWNLOAD</a>
+                    <Link
+                      href="/download"
+                      onClick={() => setIsHamburgerOpen(false)}
+                    >
+                      DOWNLOAD
                     </Link>
                   </li>
                 </ul>

@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import NavigationBar from "./NavigationBar";
 
@@ -17,7 +16,6 @@ function debounce(fn: Function, ms: number) {
 }
 
 const Layout = ({ children }) => {
-  const { pathname } = useRouter();
   const [windowWidth, setWindowWidth] = useState<number | null>(null);
   const [isHamburgerOpen, setIsHamburgerOpen] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
@@ -94,29 +92,19 @@ const Layout = ({ children }) => {
 
         <ul className="font-bold mx-8 md:mt-0 mt-4 text-lg">
           <li>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
+            <Link href="/">Home</Link>
           </li>
           <li className="py-2">
-            <Link href="/features">
-              <a>Features</a>
-            </Link>
+            <Link href="/features">Features</Link>
           </li>
           <li>
-            <Link href="/news">
-              <a>News</a>
-            </Link>
+            <Link href="/news">News</Link>
           </li>
           <li className="py-2">
-            <Link href="/about">
-              <a>About</a>
-            </Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/download">
-              <a>Download</a>
-            </Link>
+            <Link href="/download">Download</Link>
           </li>
         </ul>
       </footer>

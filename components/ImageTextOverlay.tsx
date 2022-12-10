@@ -3,11 +3,10 @@ import Image from "next/image";
 
 const ImageTextOverlay = ({ imageSrc, altText, heading, text }) => (
   <div className="grid max-w-lg">
-    <div className="block col-start-1 row-start-1">
+    <div className="block col-start-1 row-start-1 object-cover">
       <Image
         src={imageSrc}
         layout="responsive"
-        objectFit="cover"
         height={100}
         width={100}
         alt={altText}

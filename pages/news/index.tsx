@@ -26,9 +26,7 @@ const News: React.FC<{ articles: Article[] }> = ({ articles }) => (
       {articles?.map((article) => (
         <li key={article.id} className="w-full max-w-4xl md:max-h-[350px]">
           <Link href={`/news/${article.id}`}>
-            <a>
-              <CardNews article={article} className="my-8" />
-            </a>
+            <CardNews article={article} className="my-8" />
           </Link>
         </li>
       ))}

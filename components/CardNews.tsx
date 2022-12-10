@@ -11,13 +11,12 @@ const CardNews: React.FC<{ article: Article; className?: any }> = ({
     <div
       className={`${className} flex flex-col sm:flex-row cursor-pointer bg-gray rounded-md`}
     >
-      <div className="relative w-2/3 sm:w-1/3 self-center pt-2 sm:pt-0">
+      <div className="relative object-cover w-2/3 sm:w-1/3 self-center pt-2 sm:pt-0">
         <Image
           src={article.image}
-          height="100%"
-          width="100%"
+          height="150"
+          width="150"
           layout="responsive"
-          objectFit="cover"
           alt={article.altText}
         />
       </div>

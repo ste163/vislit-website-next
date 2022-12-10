@@ -78,30 +78,32 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
             </p>
 
             <div className="w-1/2 flex flex-col items-center">
-              <Link href="/download">
-                <a className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer">
-                  <span className="text-2xl font-bold">Download</span>
-                  <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
-                    TBD
-                  </div>
-                  <span>Linux, Mac, Windows</span>
-                </a>
+              <Link
+                href="/download"
+                className="bg-black flex flex-col items-center px-4 py-2 rounded-md cursor-pointer"
+              >
+                <span className="text-2xl font-bold">Download</span>
+                <div className="bg-primary font-black text-3xl my-2 px-3 py-1 rounded-sm">
+                  TBD
+                </div>
+                <span>Linux, Mac, Windows</span>
               </Link>
-              <Link href="/features">
-                <a className="text-2xl font-bold text-center mt-2">
-                  all features
-                </a>
+              <Link
+                href="/features"
+                className="text-2xl font-bold text-center mt-2"
+              >
+                all features
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="relative place-self-center w-full h-[300px] lg:h-[520px]">
+        <div className="relative object-contain place-self-center w-full h-[300px] lg:h-[520px]">
           <Image
             src={"/images/home/hero.webp"}
-            layout="fill"
-            objectFit="contain"
             alt={"Vislit's summary page with note editor open"}
+            fill
+            priority
           />
         </div>
       </section>
@@ -111,12 +113,11 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
 
         <div className="card flex flex-col px-6 py-5 h-full md:flex-row">
           <div className="flex flex-col md:flex-row">
-            <div className="place-self-center mb-2 md:mb-0">
+            <div className="place-self-center object-cover w-auto mb-2 md:mb-0">
               <Image
                 src={articles[0].image}
                 height={175}
                 width={175}
-                objectFit="cover"
                 alt={articles[0].altText}
               />
             </div>
@@ -126,8 +127,11 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
                 <p className="my-4">{articles[0].headline}</p>
                 <span className="text-sm">{articles[0].date}</span>
               </div>
-              <Link href={`/news/${articles[0].id}`}>
-                <a className="font-bold text-right">Read this article</a>
+              <Link
+                href={`/news/${articles[0].id}`}
+                className="font-bold text-right"
+              >
+                Read this article
               </Link>
             </div>
           </div>
@@ -152,18 +156,14 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
                       key={id}
                       className="underline cursor-pointer text-md font-bold"
                     >
-                      <Link href={`/news/${id}`}>
-                        <a>{title}</a>
-                      </Link>
+                      <Link href={`/news/${id}`}>{title}</Link>
                     </li>
                   )
                 )}
               </ul>
             </div>
             <div className="self-center cursor-pointer bg-primary py-2 px-3 font-bold rounded-sm mt-8 md:mt-0">
-              <Link href={`/news`}>
-                <a>all news</a>
-              </Link>
+              <Link href={`/news`}>all news</Link>
             </div>
           </div>
         </div>
@@ -178,15 +178,13 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
 
         <div className="flex-col flex lg:grid gap-10 grid-cols-2">
           {cards.map(({ imageSrc, altText, heading, text, link }, index) => (
-            <Link key={index} href={link}>
-              <a className="my-5 md:my-0">
-                <ImageTextOverlay
-                  imageSrc={imageSrc}
-                  altText={altText}
-                  heading={heading}
-                  text={text}
-                />
-              </a>
+            <Link key={index} href={link} className="my-5 md:my-0">
+              <ImageTextOverlay
+                imageSrc={imageSrc}
+                altText={altText}
+                heading={heading}
+                text={text}
+              />
             </Link>
           ))}
         </div>
