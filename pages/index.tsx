@@ -98,11 +98,12 @@ const Home: React.FC<{ articles: Article[] }> = ({ articles }) => {
           </div>
         </div>
 
-        <div className="relative object-contain place-self-center w-full h-[300px] lg:h-[520px]">
+        <div className="relative place-self-center w-full">
           <Image
             src={"/images/home/hero.webp"}
             alt={"Vislit's summary page with note editor open"}
-            fill
+            height={300}
+            width={675}
             priority
           />
         </div>
